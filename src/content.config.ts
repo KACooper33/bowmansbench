@@ -144,6 +144,19 @@ const pages = defineCollection({
       }
 
       /**
+       * CLAUDE.md rule 2 covers every page, not only comparison pages.
+       * GuideLayout renders answer_block on its own, with no verdict or
+       * method, since a guide has no overall, budget and premium pick.
+       */
+      if (data.type === 'guide') {
+        require(
+          'answer_block',
+          data.answer_block !== undefined,
+          'CLAUDE.md rule 2.',
+        );
+      }
+
+      /**
        * A guide needs a hub to point at, so GuideLayout can render the route to
        * a comparison page. CLAUDE.md rule 6 then holds by construction.
        */
