@@ -6,31 +6,38 @@ description: "Barebow and traditional are separate divisions with different equi
 answer_block: "Barebow and traditional are separate divisions with different equipment rules. Barebow allows a plunger, string walking, weights and dampeners. Traditional allows none of those, but does allow string silencers and requires a wooden riser. Instinctive is an aiming method: no major governing body checked here runs an instinctive division."
 related_hub: bows
 sources:
-  - title: "World Archery Constitution and Rules, Book 4 Field and 3D Archery"
+  - id: wa-book-4
+    title: "World Archery Constitution and Rules, Book 4 Field and 3D Archery"
     url: "https://extranet.worldarchery.sport/documents/index.php/Rules/Rule_Book_versions/2026-01-27/EN-Book_4_-_2026-01-27_Version.pdf"
     detail: "Version 2026-01-27. Barebow is article 19.3, traditional 19.4, longbow 19.5"
     checked_on: 2026-08-12
-  - title: "World Archery Constitution and Rules, Book 3 Target Archery"
+  - id: wa-book-3
+    title: "World Archery Constitution and Rules, Book 3 Target Archery"
     url: "https://storage.googleapis.com/rules-book.firebasestorage.app/RuleBooks/BOOK_003/EN/Official/official_version.pdf"
     detail: "Version 2026-03-13. The barebow rules are article 9.3"
     checked_on: 2026-08-12
-  - title: "World Archery bylaw: vibration dampeners use in the barebow division"
+  - id: wa-dampener-bylaw
+    title: "World Archery bylaw: vibration dampeners use in the barebow division"
     url: "https://extranet.worldarchery.sport/documents/index.php/Rules/Bylaws/English/2021-2023/01_-_16_September_2021_-_effective_15_January_2022/08_Vibration_dampeners_use_in_the_barebow_division.pdf"
     detail: "Effective 15 January 2022. Still names the Instinctive division under its old name"
     checked_on: 2026-08-12
-  - title: "NFAA Shooting Styles and Equipment Rules"
+  - id: nfaa-styles
+    title: "NFAA Shooting Styles and Equipment Rules"
     url: "https://nfaausa.com/about/constitution/nfaa-shooting-styles-and-equipment-rules"
     detail: "Barebow Recurve and Traditional. Ten styles, none instinctive"
     checked_on: 2026-08-12
-  - title: "IFAA Archer's Handbook"
+  - id: ifaa-handbook
+    title: "IFAA Archer's Handbook"
     url: "https://www.ifaa-archery.org/"
     detail: "Checked against the handbook text. No class close to instinctive"
     checked_on: 2026-08-12
-  - title: "IBO traditional rules"
+  - id: ibo-traditional
+    title: "IBO traditional rules"
     url: "https://www.ibotraditional.net/about/rules/"
     detail: "Twelve traditional classes, none instinctive"
     checked_on: 2026-08-12
-  - title: "NFAS bow styles"
+  - id: nfas-styles
+    title: "NFAS bow styles"
     url: "https://nfas.net/about-us/shooting-styles"
     detail: "Thirteen styles, none instinctive"
     checked_on: 2026-08-12
@@ -43,7 +50,7 @@ Barebow and traditional are two separate competition divisions with different eq
 
 The short version. Barebow permits an adjustable plunger, string walking, external weights and vibration dampeners, and a riser of any material. Traditional permits none of those. Traditional requires a wooden or laminated riser, allows only a non-adjustable arrow rest, and bans string walking. Traditional does permit string silencers, which barebow does not.
 
-World Archery sets out barebow in Book 4 article 19.3 and traditional in article 19.4. The barebow rules are identical in Book 3 article 9.3 for target archery.
+World Archery sets out barebow in [Book 4 article 19.3](#source-wa-book-4) and traditional in article 19.4. The barebow rules are identical in [Book 3 article 9.3](#source-wa-book-3) for target archery.
 
 ## Is instinctive a division?
 
@@ -51,13 +58,13 @@ No major governing body checked for this page runs a division called instinctive
 
 Five class lists were checked:
 
-- World Archery. The word appears nowhere in Book 3 or Book 4.
-- The NFAA lists ten shooting styles. None is instinctive.
-- The IFAA has no class close to instinctive.
-- The IBO traditional rules name twelve classes. None is instinctive.
-- The NFAS in the United Kingdom lists thirteen styles. None is instinctive.
+- [World Archery](#source-wa-book-4). The word appears nowhere in Book 3 or Book 4.
+- The [NFAA](#source-nfaa-styles) lists ten shooting styles. None is instinctive.
+- The [IFAA](#source-ifaa-handbook) has no class close to instinctive.
+- The [IBO traditional rules](#source-ibo-traditional) name twelve classes. None is instinctive.
+- The [NFAS](#source-nfas-styles) in the United Kingdom lists thirteen styles. None is instinctive.
 
-World Archery did run an Instinctive division in the past, and renamed it. A 2021 World Archery bylaw still refers to "the Instinctive and Long Bow divisions". The current Book 4 lists Barebow, Traditional and Longbow instead, with an interpretation dated 22 January 2022 clarifying the Traditional Division.
+World Archery did run an Instinctive division in the past, and renamed it. A [2021 World Archery bylaw](#source-wa-dampener-bylaw) still refers to "the Instinctive and Long Bow divisions". The current Book 4 lists Barebow, Traditional and Longbow instead, with an interpretation dated 22 January 2022 clarifying the Traditional Division.
 
 Smaller and regional organisations set their own class lists, and some still use the word. Check the class list for the shoot you are entering rather than assuming this holds everywhere.
 
@@ -65,7 +72,7 @@ So an archer who says they shoot instinctive is describing an aiming method, wit
 
 ## Can you use a plunger in traditional archery?
 
-You cannot use an adjustable plunger in the World Archery traditional division. Article 19.4.3 permits only a non-adjustable arrow rest, and lists what is allowed: "a simple plastic self-adhesive arrow rest, a feather rest as supplied by the manufacturer, or the athlete can use the bow shelf". It then closes the door: "No other types of arrow rests are allowed."
+You cannot use an adjustable plunger in the World Archery traditional division. [Article 19.4.3](#source-wa-book-4) permits only a non-adjustable arrow rest, and lists what is allowed: "a simple plastic self-adhesive arrow rest, a feather rest as supplied by the manufacturer, or the athlete can use the bow shelf". It then closes the door: "No other types of arrow rests are allowed."
 
 Barebow is the opposite. Article 19.3.3 permits "an adjustable pressure button, pressure point or arrow plate", provided it offers no aid in aiming, with the pressure point placed "no further back than 2 cm towards the athlete from the pivot point of the grip".
 
@@ -73,17 +80,17 @@ This single rule is the most expensive difference between the two divisions. A p
 
 ## Is string walking allowed in traditional archery?
 
-String walking is not allowed in the World Archery traditional division. Article 19.4.5 states: "A single anchor or face walking is permitted. String walking is not permitted."
+String walking is not allowed in the World Archery traditional division. [Article 19.4.5](#source-wa-book-4) states: "A single anchor or face walking is permitted. String walking is not permitted."
 
 String walking is allowed in barebow. Article 19.3.5 states: "Face and string walking are permitted."
 
-The NFAA takes the same position for its Traditional style: "One anchor point only is permitted."
+The [NFAA](#source-nfaa-styles) takes the same position for its Traditional style: "One anchor point only is permitted."
 
 This changes which tab an archer needs. A stringwalking tab with crawl marks suits barebow. It does not suit the traditional division, and the marks themselves are separately banned there.
 
 ## What tab can you use in each division?
 
-Barebow permits marks on the tab. World Archery article 19.3.7 allows "marks or lines added directly to the tab or on tape placed on the face of the tab", provided they "must be uniform in size, shape and colour and may have up to two different lengths". Barebow also permits an anchor plate attached to the tab.
+Barebow permits marks on the tab. [World Archery article 19.3.7](#source-wa-book-4) allows "marks or lines added directly to the tab or on tape placed on the face of the tab", provided they "must be uniform in size, shape and colour and may have up to two different lengths". Barebow also permits an anchor plate attached to the tab.
 
 The traditional division permits neither. Article 19.4.7 states that "markings added by the athlete, whether or not uniform in size, shape and colour, are not permitted in the traditional division", and that an anchor plate "is not permitted". It adds that when shooting, "the index finger or middle finger will be within 3 mm of the nock or touch the nock".
 
@@ -91,11 +98,11 @@ The traditional division permits neither. Article 19.4.7 states that "markings a
 
 String silencers are the rule that runs the opposite way to every other item on this page. Traditional allows them and barebow does not.
 
-World Archery traditional, article 19.4.2: "String silencers are also permitted, provided they are located no closer than 30 cm from the nocking point." The longbow division carries the same permission in article 19.5.2.
+World Archery traditional, [article 19.4.2](#source-wa-book-4): "String silencers are also permitted, provided they are located no closer than 30 cm from the nocking point." The longbow division carries the same permission in article 19.5.2.
 
 World Archery barebow, article 19.3.2: "No lip or nose marks or other attachments to the string are permitted." A string silencer is an attachment to the string.
 
-The NFAA disagrees with World Archery here. The NFAA permits string silencers in Barebow Recurve as well as Traditional: "Brush buttons and string silencers, properly placed, may be used."
+The [NFAA](#source-nfaa-styles) disagrees with World Archery here. The NFAA permits string silencers in Barebow Recurve as well as Traditional: "Brush buttons and string silencers, properly placed, may be used."
 
 ## What riser can you use in the traditional division?
 

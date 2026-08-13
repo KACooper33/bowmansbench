@@ -12,6 +12,7 @@
  */
 interface Props {
   sources: {
+    id: string;
     title: string;
     url: string;
     detail?: string | undefined;
@@ -30,7 +31,7 @@ const asDate = (value: Date) => value.toISOString().slice(0, 10);
       <h2 id="sources-heading">Sources</h2>
       <ul>
         {sources.map((source) => (
-          <li class="sources__item">
+          <li class="sources__item" id={`source-${source.id}`}>
             <a href={source.url}>{source.title}</a>
             {source.detail ? <span>. {source.detail}</span> : null}
             <span class="sources__checked">

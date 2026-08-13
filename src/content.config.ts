@@ -103,6 +103,17 @@ const pages = defineCollection({
       sources: z
         .array(
           z.object({
+            /**
+             * Anchor target. The page body links a named source with
+             * [World Archery Book 3 article 9.3.3](#source-wa-book-3),
+             * so a reader can reach the rulebook from the claim itself.
+             */
+            id: z
+              .string()
+              .regex(
+                /^[a-z0-9-]+$/,
+                'source id must be lower case letters, digits and hyphens',
+              ),
             title: z.string().min(1),
             url: z.string().url(),
             detail: z.string().optional(),

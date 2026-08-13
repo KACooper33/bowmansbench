@@ -34,6 +34,8 @@ const COMPARISON_PREFIXES = [
 const HREF = /href="([^"]*)"/g;
 const PLACEHOLDER = /data-affiliate-placeholder="([^"]*)"/g;
 const MAIN = /<main[^>]*>([\s\S]*?)<\/main>/i;
+const CITATION = /href="#(source-[^"]+)"/g;
+const SOURCE_ID = /id="(source-[^"]+)"/g;
 
 function matchAll(html, pattern) {
   return [...html.matchAll(pattern)].map((match) => match[1]);
@@ -87,6 +89,18 @@ export default function ruleChecks() {
             if (!routesOn) {
               failures.push(
                 `${url}  this guide links to no comparison page. CLAUDE.md rule 6.`,
+              );
+            }
+          }
+
+          /* A citation must reach the source it names. A link to
+             #source-wa-book-3 with no such source on the page is a broken
+             citation, which is worse than no citation at all. */
+          const declared = new Set(matchAll(html, SOURCE_ID));
+          for (const citation of new Set(matchAll(html, CITATION))) {
+            if (!declared.has(citation)) {
+              failures.push(
+                `${url}  citation links to #${citation}, which is not a source on this page.`,
               );
             }
           }
