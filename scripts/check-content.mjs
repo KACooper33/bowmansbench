@@ -37,7 +37,22 @@ const BANNED_TERMS = [
 /** The brand keeps its apostrophe in all text. CLAUDE.md. */
 const BRAND_WITHOUT_APOSTROPHE = /Bowmans\s+Bench/i;
 
+/**
+ * A single line may name an out-of-scope topic on purpose.
+ *
+ * The About and disclosure pages have to say what this site does not cover,
+ * and a reader is better served by the plain words than by a euphemism. Mark
+ * that line and only that line:
+ *
+ *   - Write about compound bows or crossbows. <!-- allow-scope-terms -->
+ *
+ * The marker is per line and must be written deliberately, so it cannot
+ * exempt a page by accident. Every use is reported at the end of the run.
+ */
+const SCOPE_EXEMPTION = '<!-- allow-scope-terms -->';
+
 const failures = [];
+const exemptions = [];
 
 function firstBannedTerm(haystack) {
   const lower = haystack.toLowerCase();
@@ -58,7 +73,9 @@ function checkText(relativePath, text) {
     const lineNumber = index + 1;
 
     const term = firstBannedTerm(line);
-    if (term) {
+    if (term && line.includes(SCOPE_EXEMPTION)) {
+      exemptions.push(`${relativePath}:${lineNumber}  names "${term}" on purpose`);
+    } else if (term) {
       failures.push(
         `${relativePath}:${lineNumber}  banned term "${term}". This topic is out of scope permanently.`,
       );
@@ -103,6 +120,14 @@ if (failures.length > 0) {
   for (const failure of failures) console.error(`  ${failure}`);
   console.error('');
   process.exit(1);
+}
+
+if (exemptions.length > 0) {
+  console.log(
+    `\ncheck:content: ${exemptions.length} line(s) name an out-of-scope topic deliberately:`,
+  );
+  for (const exemption of exemptions) console.log(`  ${exemption}`);
+  console.log('');
 }
 
 console.log(`check:content passed. ${files.length} file(s) scanned.`);
