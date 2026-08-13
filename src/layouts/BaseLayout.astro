@@ -22,6 +22,9 @@ interface Props {
 const { title, description, updatedOn, jsonLd = [] } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const year = new Date().getFullYear();
+
+/** The homepage passes the site name, so do not print it twice. */
+const documentTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
 ---
 
 <!doctype html>
@@ -29,7 +32,7 @@ const year = new Date().getFullYear();
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title} | {SITE.name}</title>
+    <title>{documentTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical.href} />
     <link rel="sitemap" href="/sitemap-index.xml" />
