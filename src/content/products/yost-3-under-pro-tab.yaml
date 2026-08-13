@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Stringwalking marks are marked "Not stated" on purpose. This listing does
+# not claim crawl marks, unlike the Spigarelli and Avalon tabs on this page.
+# Inventing that claim for a well-known barebow brand would break CLAUDE.md
+# rule 4.
+name: Yost Archery 3-Under Pro Tab
+maker: Yost Archery
+category: tab
+price:
+  value: 51.05
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Material
+    value: Cordovan leather face
+    source: maker
+  - label: Face plate
+    value: CNC machined 6000 series aluminium, anodised
+    source: maker
+  - label: Stringwalking marks
+    value: "Not stated on this listing. Described only as a machine etched index, accents and logo"
+    source: maker
+  - label: Left/right
+    value: Sold as separate RH and LH variants
+    source: maker
+  - label: Size
+    value: Small (2-3/8 in) or large (2-3/4 in)
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Yost Archery 3-Under Pro Tab]"
+limitation: This listing does not state whether the etched index doubles as a stringwalking crawl mark, unlike the other two tabs on this page.
+suits: An archer who wants a machined aluminium plate tab from a name closely associated with US barebow archery, and does not need published crawl marks.
+tradeoff: The Yost Archery 3-Under Pro Tab costs more than the Spigarelli and over twice the Avalon, without a published stringwalking feature either of the other two states outright.

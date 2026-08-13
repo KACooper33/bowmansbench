@@ -1,0 +1,33 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Avalon Classic Barebow Tab with Prime Leather
+maker: Avalon Archery
+category: tab
+price:
+  value: 19.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Material
+    value: Prime leather face, suede backing
+    source: maker
+  - label: Face plate
+    value: Grey anodised aluminium frame
+    source: maker
+  - label: Stringwalking marks
+    value: "Laser engraved markings for crawl measurements, published by the maker"
+    source: maker
+  - label: Left/right
+    value: Sold as separate RH and LH variants
+    source: maker
+  - label: Size
+    value: X-small, small, medium, large or X-large
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Avalon Classic Barebow Tab]"
+limitation: At the lowest price on this page, the Avalon Classic Barebow Tab does not carry the machined aluminium plate the Yost tab is built around.
+suits: A beginner buying a first stringwalking tab, or anyone who wants five published hand sizes to choose from.
+tradeoff: The Avalon Classic Barebow Tab costs a third of the Yost and publishes crawl marks the Yost listing does not state, in exchange for a simpler build.
