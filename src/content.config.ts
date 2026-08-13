@@ -91,6 +91,36 @@ const pages = defineCollection({
       faq: z
         .array(z.object({ question: z.string(), answer: z.string() }))
         .default([]),
+      /**
+       * Outbound citations. PROJECT_PLAN.md section 9 asks for the governing
+       * bodies to be cited correctly, and section 7 wants passages an answer
+       * engine can verify.
+       *
+       * `checked_on` records the day the link was last confirmed to resolve.
+       * Rulebook URLs carry a version in the path, so they rot when a new
+       * version publishes. A dated check makes that visible instead of silent.
+       */
+      sources: z
+        .array(
+          z.object({
+            /**
+             * Anchor target. The page body links a named source with
+             * [World Archery Book 3 article 9.3.3](#source-wa-book-3),
+             * so a reader can reach the rulebook from the claim itself.
+             */
+            id: z
+              .string()
+              .regex(
+                /^[a-z0-9-]+$/,
+                'source id must be lower case letters, digits and hyphens',
+              ),
+            title: z.string().min(1),
+            url: z.string().url(),
+            detail: z.string().optional(),
+            checked_on: z.coerce.date(),
+          }),
+        )
+        .default([]),
       updated_on: z.coerce.date(),
     })
     .superRefine((data, ctx) => {
