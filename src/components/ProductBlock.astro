@@ -8,13 +8,15 @@
  */
 import type { CollectionEntry } from 'astro:content';
 import AffiliateLink from './AffiliateLink.astro';
+import ProductPhoto from './ProductPhoto.astro';
 
 interface Props {
   product: CollectionEntry<'products'>;
 }
 
 const { product } = Astro.props;
-const { name, price, specs, affiliate, limitation, suits, tradeoff } = product.data;
+const { name, price, specs, affiliate, limitation, suits, tradeoff, photo } =
+  product.data;
 
 /** The three-line spec block leads with the headline number. */
 const keySpec = specs.find((spec) => spec.source === 'measured') ?? specs[0];
@@ -28,6 +30,8 @@ const priceText = new Intl.NumberFormat('en-US', {
 
 <section class="product" id={product.id}>
   <h2>{name}</h2>
+
+  <ProductPhoto photo={photo} productName={name} />
 
   <dl class="product__specs">
     <div class="product__spec">

@@ -32,7 +32,7 @@ const spec = z.object({
 
 const products = defineCollection({
   loader: glob({ base: './src/content/products', pattern: '**/*.yaml' }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     /** Always the full product name. Components print this, never a pronoun. CLAUDE.md rule 3. */
     name: z.string().min(1),
     maker: z.string().min(1),
@@ -56,6 +56,28 @@ const products = defineCollection({
       retailer: z.string().optional(),
     }),
     specs: z.array(spec).min(1),
+    /**
+     * A product photo, and where the right to publish it came from.
+     *
+     * Optional, because the site has no licensed photographs yet. A product
+     * with no photo renders a plain "no photo yet" box, which is honest.
+     *
+     * `credit` is the same discipline the numbers use. A photograph is not
+     * ours to publish simply because it is on the internet:
+     *   own      photographed on our own bench, always preferred
+     *   maker    supplied by the manufacturer, with permission
+     *   retailer supplied through an affiliate programme that grants the right
+     *
+     * `alt` is required whenever a photo is present. A product image with no
+     * alt text is unusable to a screen reader and invisible to a search engine.
+     */
+    photo: z
+      .object({
+        src: image(),
+        alt: z.string().min(1),
+        credit: z.enum(['own', 'maker', 'retailer']),
+      })
+      .optional(),
     affiliate: z.object({
       merchant: z.string().min(1),
       /** An invented link cannot pass as a placeholder. CLAUDE.md rule 5. */

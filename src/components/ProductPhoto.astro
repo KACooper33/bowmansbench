@@ -1,0 +1,49 @@
+---
+/**
+ * A product photograph, or an honest gap where one will go.
+ *
+ * Astro processes the image at build time, so the emitted file is resized and
+ * converted, and width and height are set on the tag. That stops the page
+ * jumping as photos load, which matters on a comparison page where the reader
+ * is scanning down a column.
+ *
+ * Nothing here fetches a remote image. A photograph must be committed to the
+ * repository, which forces the question of who owns it to be answered before
+ * it publishes rather than after.
+ */
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  photo: CollectionEntry<'products'>['data']['photo'];
+  productName: string;
+}
+
+const { photo, productName } = Astro.props;
+
+const CREDIT_LABEL = {
+  own: 'Photographed on our own bench',
+  maker: 'Photograph supplied by the maker',
+  retailer: 'Photograph supplied by the retailer',
+} as const;
+---
+
+{
+  photo ? (
+    <figure class="photo">
+      <Image
+        src={photo.src}
+        alt={photo.alt}
+        widths={[320, 640, 960]}
+        sizes="(min-width: 46rem) 20rem, 90vw"
+        loading="lazy"
+        decoding="async"
+      />
+      <figcaption class="photo__credit">{CREDIT_LABEL[photo.credit]}</figcaption>
+    </figure>
+  ) : (
+    <div class="photo photo--empty" role="img" aria-label={`No photograph of the ${productName} yet`}>
+      <span>No photo yet</span>
+    </div>
+  )
+}
