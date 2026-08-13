@@ -88,15 +88,14 @@ main {
 }
 
 /*
-  The table keeps the same left edge as the text and grows to the right.
+  The table sits in the text column like everything else, so the page has one
+  left edge and one right edge.
 
-  Spanning the full width instead would centre it, which puts its left edge
-  outside every other element on the page and reads as a mistake rather than
-  as emphasis.
+  It does not need to break out any more. The reading measure is now wide
+  enough to hold the widest table on the site without scrolling, and a table
+  that overhangs the text on either side reads as a mistake rather than as
+  emphasis. On a narrow screen it still scrolls inside its own box.
 */
-.page > .table-scroll {
-  grid-column: 2 / -1;
-}
 
 h1,
 h2,
@@ -278,7 +277,9 @@ a {
   color: var(--placeholder);
   border: 1px dashed currentColor;
   padding: 0.1rem 0.35rem;
-  white-space: nowrap;
+  /* No nowrap. Placeholder text is long, and holding it on one line forced the
+     Buy column to a third of the table, which squeezed the product names into
+     three lines each. Real affiliate links will be shorter than these. */
 }
 
 /* Email signup */
