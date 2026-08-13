@@ -3,7 +3,7 @@ title: "Barebow vs traditional vs instinctive"
 nav_label: "Barebow vs traditional"
 type: guide
 description: "Barebow and traditional are separate divisions with different equipment rules, quoted from World Archery Book 4 and the NFAA. Instinctive is a shooting method, not a division."
-answer_block: "Barebow and traditional are separate divisions with different equipment rules. Barebow allows a plunger, string walking, weights and dampeners. Traditional allows none of those, but does allow string silencers and requires a wooden riser. Instinctive is a shooting method, not a division: neither World Archery nor the NFAA runs an instinctive class."
+answer_block: "Barebow and traditional are separate divisions with different equipment rules. Barebow allows a plunger, string walking, weights and dampeners. Traditional allows none of those, but does allow string silencers and requires a wooden riser. Instinctive is an aiming method: no major governing body checked here runs an instinctive division."
 related_hub: bows
 updated_on: 2026-08-12
 ---
@@ -18,13 +18,21 @@ World Archery sets out barebow in Book 4 article 19.3 and traditional in article
 
 ## Is instinctive a division?
 
-Instinctive is a shooting method, not a competition division. The word does not appear anywhere in World Archery Book 3 or Book 4, and the NFAA does not list an instinctive shooting style.
+No major governing body checked for this page runs a division called instinctive. Instinctive describes how an archer aims, not what they may attach to the bow.
 
-World Archery did run an Instinctive division in the past. It was renamed. A 2021 World Archery bylaw refers to "the Instinctive and Long Bow divisions", and the current Book 4 lists Barebow, Traditional and Longbow instead, with an interpretation dated 22 January 2022 clarifying the Traditional Division.
+Five class lists were checked:
 
-The NFAA defines ten shooting styles. None of them is called instinctive.
+- World Archery. The word appears nowhere in Book 3 or Book 4.
+- The NFAA lists ten shooting styles. None is instinctive.
+- The IFAA has no class close to instinctive.
+- The IBO traditional rules name twelve classes. None is instinctive.
+- The NFAS in the United Kingdom lists eleven styles. None is instinctive.
 
-So when an archer says they shoot instinctive, they are describing how they aim, without a conscious gap or string reference. They will still enter a division. Under World Archery that division is usually Traditional or Longbow. Under the NFAA it is usually Traditional.
+World Archery did run an Instinctive division in the past, and renamed it. A 2021 World Archery bylaw still refers to "the Instinctive and Long Bow divisions". The current Book 4 lists Barebow, Traditional and Longbow instead, with an interpretation dated 22 January 2022 clarifying the Traditional Division.
+
+Smaller and regional organisations set their own class lists, and some still use the word. Check the class list for the shoot you are entering rather than assuming this holds everywhere.
+
+So an archer who says they shoot instinctive is describing an aiming method, without a conscious gap or string reference. They will still enter a division. Under World Archery that division is usually Traditional or Longbow. Under the NFAA it is usually Traditional.
 
 ## Can you use a plunger in traditional archery?
 
