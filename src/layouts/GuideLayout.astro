@@ -20,7 +20,7 @@ interface Props {
 }
 
 const { page } = Astro.props;
-const { title, description, updated_on, related_hub } = page.data;
+const { title, description, updated_on, related_hub, answer_block } = page.data;
 
 const hub = HUBS.find((entry) => entry.path === related_hub);
 
@@ -43,6 +43,17 @@ const jsonLd = [
 <BaseLayout title={title} description={description} updatedOn={updated_on} jsonLd={jsonLd}>
   <article class="page page--guide">
     <h1>{title}</h1>
+
+    {
+      /* CLAUDE.md rule 2 covers every page, not only comparison pages.
+         A guide has no overall, budget and premium pick, so it prints the
+         answer on its own. */
+      answer_block && (
+        <div class="answer" data-answer-block>
+          <p class="answer__text">{answer_block}</p>
+        </div>
+      )
+    }
 
     <div class="page__body">
       <slot />
