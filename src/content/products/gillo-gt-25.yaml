@@ -1,0 +1,41 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Gillo GT 25" ILF Recurve Riser
+maker: Gillo
+category: riser
+price:
+  value: 829.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1350
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Special round seats for optional balancing weight. Compatible with G1, GQ and G5 weights and accessories
+    source: maker
+  - label: Construction
+    value: Machined solid aluminium
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Bushings
+    value: Three front, one rear, plus two rear 5/16-UNF tapped holes
+    source: maker
+  - label: Shock absorbers
+    value: Integrated
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Gillo GT 25 riser]"
+limitation: The Gillo GT 25" ILF Recurve Riser is marketed for both recurve and barebow, so its weight mounting is not built for barebow alone the way the G1-N's is.
+suits: An archer who wants one riser to cover both Olympic recurve and barebow, or who values the integrated shock absorbers.
+tradeoff: The Gillo GT 25" ILF Recurve Riser costs 30 dollars more than the G1-N and weighs 20 g less, for a riser aimed at two divisions rather than one.
