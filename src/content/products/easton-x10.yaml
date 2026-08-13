@@ -1,0 +1,37 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Diameter is marked "Not a single figure" on purpose. The X10 uses a
+# barrelled design, thicker at the centre than at the ends, so one diameter
+# number would misdescribe the shaft rather than simplify it.
+name: Easton X10 Arrow Shafts
+maker: Easton
+category: arrow
+price:
+  value: 499.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Spine
+    value: "325 to 1000, in 14 published sizes"
+    source: maker
+  - label: Diameter
+    value: "Not a single figure. The shaft is barrelled, wider at the centre than at the ends, by design"
+    source: maker
+  - label: Grains per inch
+    value: Not published on this listing
+    source: maker
+  - label: Construction
+    value: High-modulus carbon fibre bonded to a 7075 aluminium alloy core
+    source: maker
+  - label: Pack size
+    value: 12 shafts
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Easton X10 shafts]"
+limitation: Points, nocks and pins are sold separately from the shaft, and matching them is normally done with a pro shop rather than from a published chart.
+suits: A competitive archer whose coach or pro shop has already matched a spine, who is buying a known quantity rather than choosing one from a chart.
+tradeoff: The Easton X10 costs four times the Victory VAP Target Sport V6, and is sold as a component to be matched by a professional rather than chosen from a public chart.
