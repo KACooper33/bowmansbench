@@ -1,0 +1,115 @@
+---
+/**
+ * The comparison page template. PROJECT_PLAN.md section 4.
+ *
+ * This layout owns the section order, so a writer cannot change it. The page
+ * body supplies only parts 6 and 7, the head-to-head blocks and the buying
+ * decision. CLAUDE.md rule 1.
+ *
+ *   1 H1                  here
+ *   2 Answer block        here
+ *   3 Data table          here
+ *   4 How I measured      here
+ *   5 One H2 per product  here
+ *   6 Head-to-head        page body
+ *   7 Which to buy        page body
+ *   8 FAQ                 here
+ *   9 Footer              BaseLayout
+ */
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import AnswerBlock from '../components/AnswerBlock.astro';
+import SpecTable from '../components/SpecTable.astro';
+import ProductBlock from '../components/ProductBlock.astro';
+import Disclosure from '../components/Disclosure.astro';
+import Faq from '../components/Faq.astro';
+import { HUBS } from '../lib/site';
+import { articleSchema, productSchema } from '../lib/schema';
+
+interface Props {
+  page: CollectionEntry<'pages'>;
+  products: CollectionEntry<'products'>[];
+  children_pages?: CollectionEntry<'pages'>[];
+}
+
+const { page, products, children_pages = [] } = Astro.props;
+const { title, description, answer_block, verdict, method, faq, updated_on, related_hub } =
+  page.data;
+
+const parentPath = page.id.includes('/') ? page.id.split('/')[0] : null;
+const parentHub = HUBS.find((hub) => hub.path === parentPath);
+const sidewaysHub = HUBS.find((hub) => hub.path === related_hub);
+
+const jsonLd = [
+  articleSchema({
+    title,
+    description,
+    updatedOn: updated_on,
+    url: new URL(Astro.url.pathname, Astro.site),
+  }),
+  ...products.map(productSchema),
+];
+---
+
+<BaseLayout title={title} description={description} updatedOn={updated_on} jsonLd={jsonLd}>
+  <article class="page page--comparison">
+    <h1>{title}</h1>
+
+    <Disclosure />
+
+    {answer_block && verdict && <AnswerBlock answer={answer_block} verdict={verdict} />}
+
+    <SpecTable products={products} />
+
+    {
+      method && (
+        <section class="method">
+          <h2>How I measured this</h2>
+          <p>{method}</p>
+        </section>
+      )
+    }
+
+    {products.map((product) => <ProductBlock product={product} />)}
+
+    <div class="page__body">
+      <slot />
+    </div>
+
+    <Faq faq={faq} />
+
+    {
+      children_pages.length > 0 && (
+        <nav class="page__children" aria-label="More in this section">
+          <h2>More on this</h2>
+          <ul>
+            {children_pages.map((child) => (
+              <li>
+                <a href={`/${child.id}/`}>{child.data.nav_label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+
+    <nav class="page__related" aria-label="Related">
+      <ul>
+        {
+          parentHub && (
+            <li>
+              <a href={`/${parentHub.path}/`}>All {parentHub.label.toLowerCase()}</a>
+            </li>
+          )
+        }
+        {
+          sidewaysHub && (
+            <li>
+              <a href={`/${sidewaysHub.path}/`}>{sidewaysHub.label}</a>
+            </li>
+          )
+        }
+      </ul>
+    </nav>
+  </article>
+</BaseLayout>

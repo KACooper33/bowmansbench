@@ -1,0 +1,35 @@
+# Scaffold sample. Not a real product.
+#
+# This record exists to prove that SpecTable and ProductBlock render. Every
+# value is invented, and the product itself is fictional, so no real maker
+# spec is being misreported. Delete both example records before launch.
+name: Example Riser A
+maker: Example Archery
+category: riser
+status: example
+price:
+  value: 500
+  currency: USD
+  source: maker
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1200
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Threaded bosses above and below the grip
+    source: maker
+  - label: Passes 12.2 cm ring
+    value: "Yes"
+    source: maker
+affiliate:
+  merchant: AvantLink
+  placeholder: "[AFFILIATE: Example Riser A]"
+limitation: Scaffold sample. Replace this record with a real product.
+suits: Scaffold sample. Replace this record with a real product.
+tradeoff: Scaffold sample. Replace this record with a real product.

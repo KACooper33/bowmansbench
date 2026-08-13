@@ -1,0 +1,101 @@
+---
+/**
+ * The shell for every page.
+ *
+ * The email signup lives here, so every page carries one and no writer has to
+ * remember it. CLAUDE.md rule 7.
+ *
+ * The footer holds part 9 of the comparison template: author, experience,
+ * affiliate disclosure, and the last-updated date.
+ */
+import { SITE, HUBS, AFFILIATE_DISCLOSURE } from '../lib/site';
+import EmailSignup from '../components/EmailSignup.astro';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  updatedOn?: Date | undefined;
+  jsonLd?: Record<string, unknown>[] | undefined;
+}
+
+const { title, description, updatedOn, jsonLd = [] } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const year = new Date().getFullYear();
+
+/** The homepage passes the site name, so do not print it twice. */
+const documentTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{documentTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical.href} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    {
+      jsonLd.map((block) => (
+        <script type="application/ld+json" set:html={JSON.stringify(block)} />
+      ))
+    }
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="site-header__brand" href="/">{SITE.name}</a>
+
+      <nav class="site-nav" aria-label="Gear">
+        <ul>
+          <li><a href="/start-here/">Start here</a></li>
+          {
+            HUBS.map((hub) => (
+              <li>
+                <a href={`/${hub.path}/`}>{hub.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <EmailSignup />
+
+    <footer class="site-footer">
+      <p class="site-footer__author">
+        Written by {SITE.author}. {SITE.authorBio}
+      </p>
+
+      <p class="site-footer__disclosure">{AFFILIATE_DISCLOSURE}</p>
+
+      {
+        updatedOn && (
+          <p class="site-footer__updated">
+            Last updated{' '}
+            <time datetime={updatedOn.toISOString().slice(0, 10)}>
+              {updatedOn.toISOString().slice(0, 10)}
+            </time>
+          </p>
+        )
+      }
+
+      <nav class="site-footer__links" aria-label="Trust">
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/disclosure/">Disclosure</a></li>
+        </ul>
+      </nav>
+
+      <p class="site-footer__copyright">&#169; {year} {SITE.name}</p>
+    </footer>
+  </body>
+</html>

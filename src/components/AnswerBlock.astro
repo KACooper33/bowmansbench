@@ -1,0 +1,30 @@
+---
+/**
+ * The first 60 words of the page. PROJECT_PLAN.md section 4, part 2.
+ *
+ * Give the verdict at once. Write no introduction. Most AI citations come from
+ * the early part of a page, so the answer goes first.
+ *
+ * The 60-word limit is enforced by the schema, not here.
+ */
+interface Props {
+  answer: string;
+  verdict: {
+    overall: string;
+    budget: string;
+    premium: string;
+  };
+}
+
+const { answer, verdict } = Astro.props;
+---
+
+<div class="answer" data-answer-block>
+  <p class="answer__text">{answer}</p>
+
+  <ul class="answer__picks">
+    <li><strong>Overall pick:</strong> {verdict.overall}</li>
+    <li><strong>Budget pick:</strong> {verdict.budget}</li>
+    <li><strong>Premium pick:</strong> {verdict.premium}</li>
+  </ul>
+</div>

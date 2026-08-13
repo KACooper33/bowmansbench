@@ -1,0 +1,55 @@
+---
+/**
+ * A comparison hub. PROJECT_PLAN.md section 3, internal link rule 2:
+ * each hub links to its own child pages.
+ *
+ * The child list is built from the collection, so hub links stay correct with
+ * no manual work.
+ */
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import { articleSchema } from '../lib/schema';
+
+interface Props {
+  page: CollectionEntry<'pages'>;
+  children_pages: CollectionEntry<'pages'>[];
+}
+
+const { page, children_pages } = Astro.props;
+const { title, description, updated_on } = page.data;
+
+const jsonLd = [
+  articleSchema({
+    title,
+    description,
+    updatedOn: updated_on,
+    url: new URL(Astro.url.pathname, Astro.site),
+  }),
+];
+---
+
+<BaseLayout title={title} description={description} updatedOn={updated_on} jsonLd={jsonLd}>
+  <article class="page page--hub">
+    <h1>{title}</h1>
+    <p class="page__description">{description}</p>
+
+    <div class="page__body">
+      <slot />
+    </div>
+
+    {
+      children_pages.length > 0 && (
+        <nav class="page__children" aria-label="Pages in this section">
+          <h2>Compare {title.toLowerCase()}</h2>
+          <ul>
+            {children_pages.map((child) => (
+              <li>
+                <a href={`/${child.id}/`}>{child.data.nav_label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </article>
+</BaseLayout>

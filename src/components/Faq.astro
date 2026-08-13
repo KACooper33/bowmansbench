@@ -1,0 +1,28 @@
+---
+/**
+ * Real questions from forums, with two-sentence answers.
+ * PROJECT_PLAN.md section 4, part 8.
+ *
+ * The heading is written as the exact question a person asks, because
+ * question-shaped headings are what AI answer engines retrieve.
+ */
+interface Props {
+  faq: { question: string; answer: string }[];
+}
+
+const { faq } = Astro.props;
+---
+
+{
+  faq.length > 0 && (
+    <section class="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Questions archers ask</h2>
+      {faq.map((item) => (
+        <div class="faq__item">
+          <h3>{item.question}</h3>
+          <p>{item.answer}</p>
+        </div>
+      ))}
+    </section>
+  )
+}

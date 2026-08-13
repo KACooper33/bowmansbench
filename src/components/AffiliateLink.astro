@@ -1,0 +1,35 @@
+---
+/**
+ * Never invent an affiliate link. CLAUDE.md rule 5.
+ *
+ * With no `url` set, this prints the placeholder text in plain sight. The
+ * build integration counts the placeholders and reports them, but does not
+ * fail, because before launch you expect many.
+ */
+interface Props {
+  merchant: string;
+  placeholder: string;
+  productName: string;
+  url?: string | undefined;
+}
+
+const { merchant, placeholder, productName, url } = Astro.props;
+---
+
+{
+  url ? (
+    <a
+      class="affiliate"
+      href={url}
+      rel="sponsored nofollow noopener"
+      target="_blank"
+      data-affiliate-link
+    >
+      Check the price of {productName} at {merchant}
+    </a>
+  ) : (
+    <span class="affiliate affiliate--placeholder" data-affiliate-placeholder={placeholder}>
+      {placeholder}
+    </span>
+  )
+}
