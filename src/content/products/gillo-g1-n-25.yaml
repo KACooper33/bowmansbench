@@ -1,0 +1,41 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Gillo G1-N 25" ILF Barebow Recurve Riser
+maker: Gillo
+category: riser
+price:
+  value: 859.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1370
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Bottom round seats for Gillo disk weights and the Gillo UFO V-Bar system
+    source: maker
+  - label: Construction
+    value: Milled 6065-T6 aluminium
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Bushings
+    value: Three front, one rear, plus two rear holes tapped for stabiliser use
+    source: maker
+  - label: Geometry
+    value: 43 mm deflex, symmetrical
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Gillo G1-N 25 riser]"
+limitation: The Gillo G1-N is the successor to the original G1, so its own published specifications are the only ones that describe what a buyer receives today.
+suits: A barebow archer who wants Gillo's weight and grip system without the higher mass weight of the GT.
+tradeoff: The Gillo G1-N 25" ILF Barebow Recurve Riser is 20 dollars cheaper than the GT and 20 g lighter, and it is built specifically for barebow rather than shared with Olympic recurve.
