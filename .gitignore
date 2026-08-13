@@ -1,0 +1,29 @@
+# Build output
+dist/
+
+# Generated types
+.astro/
+
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Host tooling
+.netlify/
+.wrangler/
+.vercel/
+
+# Editor and OS files
+.DS_Store
+.idea/
+*.swp
