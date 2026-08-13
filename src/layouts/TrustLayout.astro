@@ -7,13 +7,14 @@
  */
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import Sources from '../components/Sources.astro';
 
 interface Props {
   page: CollectionEntry<'pages'>;
 }
 
 const { page } = Astro.props;
-const { title, description, updated_on } = page.data;
+const { title, description, updated_on, sources } = page.data;
 ---
 
 <BaseLayout title={title} description={description} updatedOn={updated_on}>
@@ -24,5 +25,7 @@ const { title, description, updated_on } = page.data;
     <div class="page__body">
       <slot />
     </div>
+
+    <Sources sources={sources} />
   </article>
 </BaseLayout>
