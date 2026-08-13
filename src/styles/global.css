@@ -87,8 +87,15 @@ main {
   grid-column: 2;
 }
 
+/*
+  The table keeps the same left edge as the text and grows to the right.
+
+  Spanning the full width instead would centre it, which puts its left edge
+  outside every other element on the page and reads as a mistake rather than
+  as emphasis.
+*/
 .page > .table-scroll {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
 }
 
 h1,
