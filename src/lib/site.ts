@@ -11,10 +11,15 @@ export const SITE = {
   tagline: 'Archery gear for archers who shoot without a sight.',
   author: 'K. Adem Cooper',
   /**
-   * E-E-A-T needs a real named author with a stated division and background.
-   * PROJECT_PLAN.md section 9. Replace this before launch.
+   * The one-line bio in every page footer. The About page carries the longer
+   * version.
+   *
+   * It says "new to barebow" on purpose. The authority this site claims is in
+   * its method, not in the author's years, and a reader who finds out the
+   * truth later trusts nothing else on the page.
    */
-  authorBio: '[AUTHOR BIO: shooting background, division, and years shooting]',
+  authorBio:
+    'New to barebow, learning it with my family, and measuring everything along the way.',
 } as const;
 
 /**
