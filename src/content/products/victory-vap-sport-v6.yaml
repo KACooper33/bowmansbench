@@ -1,0 +1,34 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Victory VAP Target Sport V6 Arrow Shafts
+maker: Victory Archery
+category: arrow
+price:
+  value: 124.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Spine
+    value: "400 to 1200, in ten published sizes: 400, 450, 500, 600, 700, 800, 900, 1000, 1100, 1200"
+    source: maker
+  - label: Diameter
+    value: 0.166
+    unit: in
+    source: maker
+  - label: Grains per inch
+    value: "7.1 (400) down to 5.0 (900), then rising slightly to 5.5 at 1200. Full chart on the page"
+    source: maker
+  - label: Straightness tolerance
+    value: "+/- .006 in"
+    source: maker
+  - label: Pack size
+    value: 12 shafts
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Victory VAP Target Sport V6 shafts]"
+limitation: The published GPI does not fall in a straight line as spine number rises, so a buyer has to read the actual chart rather than assume a pattern.
+suits: An archer who wants a full spine and weight chart published up front, without contacting the maker or a pro shop.
+tradeoff: The Victory VAP Target Sport V6 costs a quarter of the Easton X10 and publishes every number a buyer needs to choose a spine without help.

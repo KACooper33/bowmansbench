@@ -1,0 +1,37 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+#
+# GPI is marked "Not published" on purpose. Lancaster's listing gives the
+# spine range but no per-spine weight chart, unlike the Victory VAP shaft.
+# Inventing a figure would break CLAUDE.md rule 4.
+name: Easton Avance Sport 4mm Carbon Target Arrow Shafts
+maker: Easton
+category: arrow
+price:
+  value: 109.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Spine
+    value: "340 to 2000, in 16 published sizes"
+    source: maker
+  - label: Diameter
+    value: "4 mm nominal, the product's own name for its diameter class"
+    source: maker
+  - label: Grains per inch
+    value: Not published on this listing
+    source: maker
+  - label: Construction
+    value: All-carbon
+    source: maker
+  - label: Pack size
+    value: 12 shafts
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Easton Avance Sport 4mm shafts]"
+limitation: Easton does not publish a per-spine GPI chart on this listing, unlike the Victory VAP shaft, so a buyer cannot compare projected arrow mass without a separate source or a scale.
+suits: An entry to intermediate target archer who wants a wide spine selection at a mid-range price.
+tradeoff: The Easton Avance Sport 4mm costs 15 dollars less than the Victory VAP Target Sport V6 and publishes less data to choose a spine by.
