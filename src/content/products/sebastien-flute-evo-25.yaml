@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: Sebastien Flute EVO 25" ILF Recurve Riser
+maker: Sebastien Flute
+category: riser
+price:
+  value: 349.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1200
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Not included
+    source: maker
+  - label: Construction
+    value: 6061 T6 aluminium, CNC machined
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Plunger mounting
+    value: Dual Berger holes, for bolt-on or stick-on rests with a plunger
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Sebastien Flute EVO 25 riser]"
+limitation: The Sebastien Flute EVO ships with no weights, so a barebow archer must budget for a weight system on top of the riser price.
+suits: An archer who wants a machined aluminium riser and intends to choose their own weight system.
+tradeoff: The Sebastien Flute EVO 25" ILF Recurve Riser matches the Kinetic Vygo on mass weight and costs more, because the weights are not in the box.

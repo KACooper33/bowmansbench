@@ -1,0 +1,42 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Several fields read "Not published". The maker's listing does not state them,
+# and inventing a figure would break CLAUDE.md rule 4.
+name: Shibuya DX Plunger
+maker: Shibuya
+category: plunger
+price:
+  value: 39.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Adjustment type
+    value: Not published
+    source: maker
+  - label: Click detents
+    value: Not published
+    source: maker
+  - label: Spring range
+    value: Three springs. Tensions are not published
+    source: maker
+  - label: Construction
+    value: Stainless steel cylinder
+    source: maker
+  - label: Tips
+    value: Teflon tip and metal tip, both included
+    source: maker
+  - label: Thread
+    value: 5/16-24
+    source: maker
+  - label: In the box
+    value: Two tips, three springs, 1.5 mm and 2.5 mm hex wrenches
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Shibuya DX Plunger]"
+limitation: Shibuya publishes neither the spring tensions nor the adjustment mechanism for the Shibuya DX Plunger, so a setting cannot be recorded by number from the maker's own figures.
+suits: A first plunger, or any archer who sets tension once and leaves it alone.
+tradeoff: The Shibuya DX Plunger gives most of the function for a fifth of the price of the Beiter Plunger, and gives up the ability to return to a numbered setting.

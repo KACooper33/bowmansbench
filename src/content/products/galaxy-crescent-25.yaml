@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: Galaxy Crescent 25" ILF Recurve Riser
+maker: Galaxy
+category: riser
+price:
+  value: 119.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 2.01
+    unit: lb
+    source: maker
+  - label: Weight system
+    value: Not included. Stabiliser bushings only
+    source: maker
+  - label: Construction
+    value: Magnesium
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Plunger mounting
+    value: Published as ready for a plunger
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Crescent 25 riser]"
+limitation: Magnesium construction makes the Galaxy Crescent the lightest riser here, which gives a barebow archer less mass to steady the bow.
+suits: An archer on the smallest budget who wants an ILF riser that accepts a plunger and weights later.
+tradeoff: The Galaxy Crescent 25" ILF Recurve Riser costs the least of any riser on this page, and supplies no weights at all.

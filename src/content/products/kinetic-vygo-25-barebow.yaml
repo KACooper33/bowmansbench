@@ -1,0 +1,41 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: Kinetic Vygo 25" Barebow ILF Recurve Riser
+maker: Kinetic
+category: riser
+price:
+  value: 259.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1200
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Included. Two 200 g and one 100 g weight, mounting below the grip
+    source: maker
+  - label: Construction
+    value: 6063 T6 aluminium, matte anodised
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Plunger mounting
+    value: Dual Berger hole and rest mount
+    source: maker
+  - label: Bushings
+    value: Three on the back, two on the face below the grip
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Kinetic Vygo 25 Barebow riser]"
+limitation: The cushion plunger is sold separately, and the included weights mount below the grip only.
+suits: An archer who wants a barebow setup that works out of the box without buying a weight system first.
+tradeoff: The Kinetic Vygo 25" Barebow ILF Recurve Riser includes the weights, so more of the budget goes to the riser and less to the parts around it.

@@ -23,6 +23,7 @@ import SpecTable from '../components/SpecTable.astro';
 import ProductBlock from '../components/ProductBlock.astro';
 import Disclosure from '../components/Disclosure.astro';
 import Faq from '../components/Faq.astro';
+import Sources from '../components/Sources.astro';
 import { HUBS } from '../lib/site';
 import { articleSchema, productSchema } from '../lib/schema';
 
@@ -33,7 +34,7 @@ interface Props {
 }
 
 const { page, products, children_pages = [] } = Astro.props;
-const { title, description, answer_block, verdict, method, faq, updated_on, related_hub } =
+const { title, description, answer_block, verdict, method, faq, updated_on, related_hub, sources } =
   page.data;
 
 const parentPath = page.id.includes('/') ? page.id.split('/')[0] : null;
@@ -77,6 +78,17 @@ const jsonLd = [
     </div>
 
     <Faq faq={faq} />
+
+    {/*
+      Sources sit after part 8, the FAQ, and before part 9, the footer, which
+      BaseLayout renders. This appends to the template of PROJECT_PLAN.md
+      section 4 rather than reordering it, so parts 1 to 9 keep their order.
+
+      A comparison page that quotes a maker specification has to show where the
+      number came from, and the build check requires every citation to resolve
+      to a source rendered on the same page.
+    */}
+    <Sources sources={sources} />
 
     {
       children_pages.length > 0 && (
