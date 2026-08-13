@@ -10,12 +10,13 @@
   --accent: #7a4b1e;
   --measured: #1f5c3a;
   --placeholder: #8a5a00;
-  /* Prose line length. About 70 characters, which is the comfortable range
-     for reading. Paragraphs should not exceed this at any screen size. */
-  --measure: 42rem;
+  /* Prose line length, about 90 characters. Longer than the classic 70, which
+     is set for print columns and leaves a laptop looking mostly empty. Raise
+     or lower this one value to retune every text block on the site. */
+  --measure: 56rem;
   /* The page container. Navigation, footer and data tables use this, because
      a table has no reason to be bound by a paragraph's ideal line length. */
-  --wide: 68rem;
+  --wide: 76rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,11 +45,27 @@ body {
   font: 1rem/1.6 ui-serif, Georgia, 'Times New Roman', serif;
 }
 
-main,
+/*
+  The page container. Only `main` takes the wide width, so the data table has
+  room to break out of the text column.
+*/
+main {
+  max-width: var(--wide);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+/*
+  Header, footer and signup align with the text column rather than the wide
+  container. Both are centred, so the brand, the navigation, the H1 and every
+  paragraph share one left edge.
+*/
 .site-header,
 .site-footer,
 .signup {
-  max-width: var(--wide);
+  /* Box sizing is border-box, so the padding is added back here. Without it
+     these sit 20px inside the text column instead of level with it. */
+  max-width: calc(var(--measure) + 2.5rem);
   margin-inline: auto;
   padding-inline: 1.25rem;
 }
