@@ -304,3 +304,27 @@ a {
 .faq__item h3 {
   margin-bottom: 0.25rem;
 }
+
+/* Sources */
+
+.sources {
+  border-top: 1px solid var(--rule);
+  margin-top: 2rem;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.sources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sources__item {
+  margin-block: 0.6rem;
+}
+
+.sources__checked {
+  display: block;
+  color: var(--ink-soft);
+  font-size: 0.85em;
+}

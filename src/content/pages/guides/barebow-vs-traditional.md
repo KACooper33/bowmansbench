@@ -5,6 +5,35 @@ type: guide
 description: "Barebow and traditional are separate divisions with different equipment rules, quoted from World Archery Book 4 and the NFAA. Instinctive is a shooting method, not a division."
 answer_block: "Barebow and traditional are separate divisions with different equipment rules. Barebow allows a plunger, string walking, weights and dampeners. Traditional allows none of those, but does allow string silencers and requires a wooden riser. Instinctive is an aiming method: no major governing body checked here runs an instinctive division."
 related_hub: bows
+sources:
+  - title: "World Archery Constitution and Rules, Book 4 Field and 3D Archery"
+    url: "https://extranet.worldarchery.sport/documents/index.php/Rules/Rule_Book_versions/2026-01-27/EN-Book_4_-_2026-01-27_Version.pdf"
+    detail: "Version 2026-01-27. Barebow is article 19.3, traditional 19.4, longbow 19.5"
+    checked_on: 2026-08-12
+  - title: "World Archery Constitution and Rules, Book 3 Target Archery"
+    url: "https://storage.googleapis.com/rules-book.firebasestorage.app/RuleBooks/BOOK_003/EN/Official/official_version.pdf"
+    detail: "Version 2026-03-13. The barebow rules are article 9.3"
+    checked_on: 2026-08-12
+  - title: "World Archery bylaw: vibration dampeners use in the barebow division"
+    url: "https://extranet.worldarchery.sport/documents/index.php/Rules/Bylaws/English/2021-2023/01_-_16_September_2021_-_effective_15_January_2022/08_Vibration_dampeners_use_in_the_barebow_division.pdf"
+    detail: "Effective 15 January 2022. Still names the Instinctive division under its old name"
+    checked_on: 2026-08-12
+  - title: "NFAA Shooting Styles and Equipment Rules"
+    url: "https://nfaausa.com/about/constitution/nfaa-shooting-styles-and-equipment-rules"
+    detail: "Barebow Recurve and Traditional. Ten styles, none instinctive"
+    checked_on: 2026-08-12
+  - title: "IFAA Archer's Handbook"
+    url: "https://www.ifaa-archery.org/"
+    detail: "Checked against the handbook text. No class close to instinctive"
+    checked_on: 2026-08-12
+  - title: "IBO traditional rules"
+    url: "https://www.ibotraditional.net/about/rules/"
+    detail: "Twelve traditional classes, none instinctive"
+    checked_on: 2026-08-12
+  - title: "NFAS bow styles"
+    url: "https://nfas.net/about-us/shooting-styles"
+    detail: "Thirteen styles, none instinctive"
+    checked_on: 2026-08-12
 updated_on: 2026-08-12
 ---
 
@@ -26,7 +55,7 @@ Five class lists were checked:
 - The NFAA lists ten shooting styles. None is instinctive.
 - The IFAA has no class close to instinctive.
 - The IBO traditional rules name twelve classes. None is instinctive.
-- The NFAS in the United Kingdom lists eleven styles. None is instinctive.
+- The NFAS in the United Kingdom lists thirteen styles. None is instinctive.
 
 World Archery did run an Instinctive division in the past, and renamed it. A 2021 World Archery bylaw still refers to "the Instinctive and Long Bow divisions". The current Book 4 lists Barebow, Traditional and Longbow instead, with an interpretation dated 22 January 2022 clarifying the Traditional Division.
 
@@ -131,8 +160,8 @@ If you describe your shooting as instinctive, that does not decide the division 
 
 ## Which rulebook versions does this page quote?
 
-This page quotes World Archery Constitution and Rules, Book 4 Field and 3D Archery, version 2026-01-27, chapter 19. The barebow rules are identical in Book 3 Target Archery, version 2026-03-13, article 9.3.
+Every rulebook and class list quoted on this page is listed at the end, with its version and the day the link was last checked.
 
-It also quotes the World Archery bylaw "Vibration dampeners use in the barebow division", effective 15 January 2022, and the NFAA Shooting Styles and Equipment Rules for Barebow Recurve and Traditional.
+The barebow rules are identical in Book 3 Target Archery and Book 4 Field and 3D Archery, so a barebow archer reads the same equipment rules for target, field and 3D.
 
 Rules change, and division names have changed before. Check the current rulebook of the body running your event.

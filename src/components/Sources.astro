@@ -1,0 +1,44 @@
+---
+/**
+ * Outbound citations for a page.
+ *
+ * PROJECT_PLAN.md section 9 asks for the governing bodies to be cited
+ * correctly. A reader who can reach the rulebook in one click can check the
+ * claim, which is what separates this from a rewritten spec sheet.
+ *
+ * Each entry prints the day the link was last confirmed to resolve. Rulebook
+ * URLs carry a version in the path, so they break when a new version
+ * publishes. The date tells a reader how fresh the check was.
+ */
+interface Props {
+  sources: {
+    title: string;
+    url: string;
+    detail?: string | undefined;
+    checked_on: Date;
+  }[];
+}
+
+const { sources } = Astro.props;
+
+const asDate = (value: Date) => value.toISOString().slice(0, 10);
+---
+
+{
+  sources.length > 0 && (
+    <section class="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Sources</h2>
+      <ul>
+        {sources.map((source) => (
+          <li class="sources__item">
+            <a href={source.url}>{source.title}</a>
+            {source.detail ? <span>. {source.detail}</span> : null}
+            <span class="sources__checked">
+              Link checked <time datetime={asDate(source.checked_on)}>{asDate(source.checked_on)}</time>.
+            </span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

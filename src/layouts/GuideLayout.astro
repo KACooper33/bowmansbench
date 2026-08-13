@@ -12,6 +12,7 @@
  */
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
+import Sources from '../components/Sources.astro';
 import { HUBS } from '../lib/site';
 import { articleSchema } from '../lib/schema';
 
@@ -20,7 +21,8 @@ interface Props {
 }
 
 const { page } = Astro.props;
-const { title, description, updated_on, related_hub, answer_block } = page.data;
+const { title, description, updated_on, related_hub, answer_block, sources } =
+  page.data;
 
 const hub = HUBS.find((entry) => entry.path === related_hub);
 
@@ -58,6 +60,8 @@ const jsonLd = [
     <div class="page__body">
       <slot />
     </div>
+
+    <Sources sources={sources} />
 
     <nav class="page__next" aria-label="Next step">
       <h2>Which gear does this apply to?</h2>

@@ -5,6 +5,23 @@ type: guide
 description: "What barebow allows and what it bans, quoted from World Archery Book 3 and the NFAA equipment rules, with the article numbers."
 answer_block: "Barebow bans sights, draw check devices including clickers, stabilisers, and anything attached to the string. It permits a cushion plunger, weights, and vibration dampeners. The whole bow must pass a 12.2 cm ring with every attachment fitted. String silencers are the split: the NFAA allows them, World Archery does not."
 related_hub: plungers
+sources:
+  - title: "World Archery Constitution and Rules, Book 3 Target Archery"
+    url: "https://storage.googleapis.com/rules-book.firebasestorage.app/RuleBooks/BOOK_003/EN/Official/official_version.pdf"
+    detail: "Version 2026-03-13. Barebow is chapter 9, article 9.3. The compound draw weight limit is article 9.2.1"
+    checked_on: 2026-08-12
+  - title: "World Archery bylaw: vibration dampeners use in the barebow division"
+    url: "https://extranet.worldarchery.sport/documents/index.php/Rules/Bylaws/English/2021-2023/01_-_16_September_2021_-_effective_15_January_2022/08_Vibration_dampeners_use_in_the_barebow_division.pdf"
+    detail: "Effective 15 January 2022. Shows the struck-out wording and the replacement"
+    checked_on: 2026-08-12
+  - title: "NFAA Shooting Styles and Equipment Rules"
+    url: "https://nfaausa.com/about/constitution/nfaa-shooting-styles-and-equipment-rules"
+    detail: "Barebow Recurve, section I"
+    checked_on: 2026-08-12
+  - title: "World Archery rulebook index"
+    url: "https://www.worldarchery.sport/rulebook"
+    detail: "Use this when the versioned link above has been superseded"
+    checked_on: 2026-08-12
 updated_on: 2026-08-12
 ---
 
@@ -105,7 +122,7 @@ String silencers are the one outright disagreement. Everything else on this list
 
 ## Which rulebook versions does this page quote?
 
-This page quotes World Archery Constitution and Rules, Book 3 Target Archery, version 2026-03-13, chapter 9. It also quotes the World Archery bylaw "Vibration dampeners use in the barebow division", effective 15 January 2022, and the NFAA Shooting Styles and Equipment Rules for Barebow Recurve.
+Every rulebook quoted on this page is listed at the end, with its version and the day the link was last checked.
 
 Note the renumbering. The World Archery barebow equipment rules sat in Book 3 chapter 11 in earlier versions and are chapter 9 in the current one. Field and 3D rules are in Book 4. Older guides that cite article 11.4 are quoting a superseded numbering.
 
