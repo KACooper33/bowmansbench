@@ -17,14 +17,6 @@ Bowhunting, compound bows, and crossbows stay out of scope permanently.
 
 ## Status
 
-No site code exists yet. The platform choice is still open. See section 11 of
-the project plan for the other open items.
+No site code exists yet. The platform choice is still open.
 
-## Documents
-
-| File | Contents |
-|---|---|
-| `PROJECT_PLAN.md` | Site map, page template, launch order, revenue plan, and the rules of the sport |
-| `CLAUDE.md` | Working instructions for content and code |
-
-Read `PROJECT_PLAN.md` before you write any page.
+The planning documents are kept outside this repository.

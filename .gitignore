@@ -27,3 +27,7 @@ pnpm-debug.log*
 .DS_Store
 .idea/
 *.swp
+
+# Local planning documents. Keep these out of the public repository.
+CLAUDE.md
+PROJECT_PLAN.md
