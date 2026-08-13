@@ -1,0 +1,68 @@
+---
+/**
+ * One H2 per product. PROJECT_PLAN.md section 4, part 5.
+ *
+ * Each block must stand alone, because AI systems retrieve chunks, not pages.
+ * This component always prints the full product name and never a pronoun, so
+ * no page can write "this riser". CLAUDE.md rule 3.
+ */
+import type { CollectionEntry } from 'astro:content';
+import AffiliateLink from './AffiliateLink.astro';
+
+interface Props {
+  product: CollectionEntry<'products'>;
+}
+
+const { product } = Astro.props;
+const { name, price, specs, affiliate, limitation, suits, tradeoff } = product.data;
+
+/** The three-line spec block leads with the headline number. */
+const keySpec = specs.find((spec) => spec.source === 'measured') ?? specs[0];
+
+const priceText = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: price.currency,
+  maximumFractionDigits: 0,
+}).format(price.value);
+---
+
+<section class="product" id={product.id}>
+  <h2>{name}</h2>
+
+  <dl class="product__specs">
+    <div class="product__spec">
+      <dt>Price</dt>
+      <dd data-source={price.source}>{priceText}</dd>
+    </div>
+
+    {
+      keySpec && (
+        <div class="product__spec">
+          <dt>{keySpec.label}</dt>
+          <dd data-source={keySpec.source}>
+            {keySpec.value}
+            {keySpec.unit ? ` ${keySpec.unit}` : ''}
+            {keySpec.source === 'measured' ? ' (measured)' : ' (maker)'}
+          </dd>
+        </div>
+      )
+    }
+
+    <div class="product__spec">
+      <dt>Key limitation</dt>
+      <dd>{limitation}</dd>
+    </div>
+  </dl>
+
+  <p><strong>Who {name} suits.</strong> {suits}</p>
+  <p><strong>The trade-off with {name}.</strong> {tradeoff}</p>
+
+  <p class="product__buy">
+    <AffiliateLink
+      merchant={affiliate.merchant}
+      placeholder={affiliate.placeholder}
+      productName={name}
+      url={affiliate.url}
+    />
+  </p>
+</section>

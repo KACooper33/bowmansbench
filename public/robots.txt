@@ -1,0 +1,36 @@
+# Bowman's Bench
+#
+# AI answer engines are a wanted source of traffic and citations.
+# PROJECT_PLAN.md section 7. Let their crawlers in.
+#
+# Note: robots.txt alone is not enough. Cloudflare blocks AI crawlers by
+# default, so the bot setting in the Cloudflare dashboard must be changed too.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://bowmansbench.com/sitemap-index.xml

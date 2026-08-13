@@ -1,0 +1,58 @@
+---
+/**
+ * A support guide.
+ *
+ * PROJECT_PLAN.md section 3, link rule 4: every support guide links to at
+ * least one comparison page. Guides bring the reader in. Comparison pages earn
+ * the commission. Never end a guide without a route to a product page.
+ *
+ * The schema makes `related_hub` required on guides, and this layout renders
+ * the link. Rule 4 therefore holds by construction, not by memory. The build
+ * integration still checks the emitted HTML, in case this layout breaks.
+ */
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import { HUBS } from '../lib/site';
+import { articleSchema } from '../lib/schema';
+
+interface Props {
+  page: CollectionEntry<'pages'>;
+}
+
+const { page } = Astro.props;
+const { title, description, updated_on, related_hub } = page.data;
+
+const hub = HUBS.find((entry) => entry.path === related_hub);
+
+if (!hub) {
+  throw new Error(
+    `GuideLayout: "${page.id}" has related_hub "${related_hub}", which is not a hub in src/lib/site.ts.`,
+  );
+}
+
+const jsonLd = [
+  articleSchema({
+    title,
+    description,
+    updatedOn: updated_on,
+    url: new URL(Astro.url.pathname, Astro.site),
+  }),
+];
+---
+
+<BaseLayout title={title} description={description} updatedOn={updated_on} jsonLd={jsonLd}>
+  <article class="page page--guide">
+    <h1>{title}</h1>
+
+    <div class="page__body">
+      <slot />
+    </div>
+
+    <nav class="page__next" aria-label="Next step">
+      <h2>Which gear does this apply to?</h2>
+      <p>
+        <a href={`/${hub.path}/`}>Compare {hub.label.toLowerCase()}</a>
+      </p>
+    </nav>
+  </article>
+</BaseLayout>

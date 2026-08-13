@@ -1,0 +1,62 @@
+---
+/**
+ * The homepage. It keeps its own route file, because its layout differs from
+ * the 26 content pages.
+ *
+ * PROJECT_PLAN.md section 3, link rule 1: start-here links down to every hub.
+ * The homepage does the same, so a reader lands on a route in one click.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, HUBS } from '../lib/site';
+
+const pages = await getCollection('pages');
+
+const comparisons = pages
+  .filter((page) => page.data.type === 'comparison' || page.data.type === 'head-to-head')
+  .filter((page) => page.id.includes('/'))
+  .sort((a, b) => b.data.updated_on.getTime() - a.data.updated_on.getTime())
+  .slice(0, 6);
+---
+
+<BaseLayout title={SITE.name} description={SITE.tagline}>
+  <article class="page page--home">
+    <h1>{SITE.name}</h1>
+    <p class="answer__text">{SITE.tagline}</p>
+
+    <p>
+      Measured gear data for barebow archers. Every number on this site says
+      whether it was measured on our own bench or taken from the maker.
+    </p>
+
+    <p><a href="/start-here/">Start here if you are new to barebow</a></p>
+
+    <nav class="page__children" aria-label="Gear">
+      <h2>Compare the gear</h2>
+      <ul>
+        {
+          HUBS.map((hub) => (
+            <li>
+              <a href={`/${hub.path}/`}>{hub.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    {
+      comparisons.length > 0 && (
+        <nav class="page__children" aria-label="Comparisons">
+          <h2>Recent comparisons</h2>
+          <ul>
+            {comparisons.map((page) => (
+              <li>
+                <a href={`/${page.id}/`}>{page.data.nav_label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      )
+    }
+  </article>
+</BaseLayout>

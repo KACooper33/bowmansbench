@@ -1,0 +1,94 @@
+---
+/**
+ * The data table. PROJECT_PLAN.md section 4 puts it high, before the reviews,
+ * and fixes the columns per category.
+ *
+ * Two data rules apply. Measure the numbers where you can, and mark clearly
+ * which numbers were measured and which came from the maker.
+ */
+import type { CollectionEntry } from 'astro:content';
+import { SPEC_COLUMNS, FALLBACK_COLUMNS } from '../lib/columns';
+import AffiliateLink from './AffiliateLink.astro';
+
+interface Props {
+  products: CollectionEntry<'products'>[];
+}
+
+const { products } = Astro.props;
+
+const category = products[0]?.data.category ?? '';
+const columns = SPEC_COLUMNS[category] ?? FALLBACK_COLUMNS;
+
+function specFor(product: CollectionEntry<'products'>, label: string) {
+  return product.data.specs.find((spec) => spec.label === label);
+}
+
+const anyMeasured = products.some((product) =>
+  product.data.specs.some((spec) => spec.source === 'measured'),
+);
+
+const priceFormat = (value: number, currency: string) =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency, maximumFractionDigits: 0 }).format(value);
+---
+
+{
+  products.length > 0 && (
+    <div class="table-scroll">
+      <table class="spec-table">
+        <thead>
+          <tr>
+            <th scope="col">Model</th>
+            {columns.map((column) => (
+              <th scope="col">{column}</th>
+            ))}
+            <th scope="col">Price</th>
+            <th scope="col">Buy</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products.map((product) => (
+            <tr>
+              <th scope="row">{product.data.name}</th>
+
+              {columns.map((column) => {
+                const spec = specFor(product, column);
+                if (!spec) return <td class="spec-table__gap">&#8212;</td>;
+                return (
+                  <td data-source={spec.source}>
+                    {spec.value}
+                    {spec.unit ? ` ${spec.unit}` : ''}
+                    {spec.source === 'measured' ? (
+                      <span class="measured-mark" aria-hidden="true">&#8224;</span>
+                    ) : null}
+                  </td>
+                );
+              })}
+
+              <td data-source={product.data.price.source}>
+                {priceFormat(product.data.price.value, product.data.price.currency)}
+              </td>
+
+              <td>
+                <AffiliateLink
+                  merchant={product.data.affiliate.merchant}
+                  placeholder={product.data.affiliate.placeholder}
+                  productName={product.data.name}
+                  url={product.data.affiliate.url}
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )
+}
+
+{
+  anyMeasured && (
+    <p class="table-legend">
+      <span class="measured-mark" aria-hidden="true">&#8224;</span>
+      Measured on our own bench. Every other number comes from the maker.
+    </p>
+  )
+}

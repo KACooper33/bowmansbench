@@ -1,0 +1,108 @@
+#!/usr/bin/env node
+/**
+ * Layer 2 rule checks. See the scaffold plan, section 5.
+ *
+ * These run over raw source text, before the Astro build.
+ *
+ * Astro 7 compresses whitespace with JSX rules by default, so a text search
+ * over built HTML is not reliable. Text rules therefore live here, and only
+ * structural rules live in the build integration.
+ */
+
+import { readdir, readFile } from 'node:fs/promises';
+import { join, extname, relative } from 'node:path';
+
+const PROJECT_ROOT = new URL('..', import.meta.url).pathname;
+const ROOTS = ['src', 'public'];
+
+const TEXT_EXTENSIONS = new Set([
+  '.md', '.mdx', '.astro', '.ts', '.js', '.mjs',
+  '.yaml', '.yml', '.json', '.css', '.txt',
+]);
+
+/**
+ * Permanently out of scope. PROJECT_PLAN.md sections 1 and 10, and CLAUDE.md.
+ * Matched without case, against text and against file paths.
+ */
+const BANNED_TERMS = [
+  'bowhunt',
+  'bow hunt',
+  'hunting',
+  'hunter',
+  'compound bow',
+  'crossbow',
+  'broadhead',
+];
+
+/** The brand keeps its apostrophe in all text. CLAUDE.md. */
+const BRAND_WITHOUT_APOSTROPHE = /Bowmans\s+Bench/i;
+
+const failures = [];
+
+function firstBannedTerm(haystack) {
+  const lower = haystack.toLowerCase();
+  return BANNED_TERMS.find((term) => lower.includes(term));
+}
+
+function checkPath(relativePath) {
+  const term = firstBannedTerm(relativePath);
+  if (term) {
+    failures.push(
+      `${relativePath}  banned term "${term}" in the file path. This topic is out of scope permanently.`,
+    );
+  }
+}
+
+function checkText(relativePath, text) {
+  text.split('\n').forEach((line, index) => {
+    const lineNumber = index + 1;
+
+    const term = firstBannedTerm(line);
+    if (term) {
+      failures.push(
+        `${relativePath}:${lineNumber}  banned term "${term}". This topic is out of scope permanently.`,
+      );
+    }
+
+    if (BRAND_WITHOUT_APOSTROPHE.test(line)) {
+      failures.push(
+        `${relativePath}:${lineNumber}  the brand needs its apostrophe. Write "Bowman's Bench".`,
+      );
+    }
+  });
+}
+
+async function collectFiles(root) {
+  let entries;
+  try {
+    entries = await readdir(join(PROJECT_ROOT, root), {
+      recursive: true,
+      withFileTypes: true,
+    });
+  } catch (error) {
+    if (error.code === 'ENOENT') return [];
+    throw error;
+  }
+
+  return entries
+    .filter((entry) => entry.isFile())
+    .map((entry) => join(entry.parentPath, entry.name))
+    .filter((path) => TEXT_EXTENSIONS.has(extname(path)));
+}
+
+const files = (await Promise.all(ROOTS.map(collectFiles))).flat();
+
+for (const absolutePath of files) {
+  const relativePath = relative(PROJECT_ROOT, absolutePath);
+  checkPath(relativePath);
+  checkText(relativePath, await readFile(absolutePath, 'utf8'));
+}
+
+if (failures.length > 0) {
+  console.error(`\ncheck:content failed. ${failures.length} problem(s):\n`);
+  for (const failure of failures) console.error(`  ${failure}`);
+  console.error('');
+  process.exit(1);
+}
+
+console.log(`check:content passed. ${files.length} file(s) scanned.`);

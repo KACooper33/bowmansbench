@@ -1,0 +1,35 @@
+---
+/**
+ * Every page carries this. CLAUDE.md rule 7.
+ *
+ * The `data-email-signup` marker is what the build integration looks for, so
+ * do not remove it.
+ *
+ * The email provider is still open. PROJECT_PLAN.md section 11. When it is
+ * chosen, the embed replaces the inert form below, and only this file changes.
+ */
+---
+
+<section class="signup" data-email-signup aria-labelledby="email-signup-heading">
+  <h2 id="email-signup-heading">Get the tuning notes</h2>
+  <p>
+    Measured barebow gear data and tuning notes. No spam. Unsubscribe with one
+    click.
+  </p>
+
+  <form class="signup__form" data-email-signup-form>
+    <label class="signup__label" for="email-signup-input">Your email</label>
+    <input
+      class="signup__input"
+      id="email-signup-input"
+      name="email"
+      type="email"
+      autocomplete="email"
+      placeholder="you@example.com"
+      required
+    />
+    <button class="signup__button" type="submit">Sign up</button>
+  </form>
+
+  <p class="signup__todo">[EMAIL PROVIDER: form action and embed go here]</p>
+</section>

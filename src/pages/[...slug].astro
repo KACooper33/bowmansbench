@@ -1,0 +1,86 @@
+---
+/**
+ * Every content page except the homepage.
+ *
+ * The file path inside src/content/pages/ becomes the URL, because the glob
+ * loader puts the sub-path in the entry id. `risers/under-500.mdx` builds
+ * `/risers/under-500/`. Adding a page later means adding one Markdown file and
+ * no route work at all.
+ */
+import type { GetStaticPaths } from 'astro';
+import { getCollection, render } from 'astro:content';
+import ComparisonLayout from '../layouts/ComparisonLayout.astro';
+import HubLayout from '../layouts/HubLayout.astro';
+import GuideLayout from '../layouts/GuideLayout.astro';
+import TrustLayout from '../layouts/TrustLayout.astro';
+
+export const getStaticPaths = (async () => {
+  const [pages, products] = await Promise.all([
+    getCollection('pages'),
+    getCollection('products'),
+  ]);
+
+  return pages.map((page) => {
+    /** Direct children only, so /risers/ does not list a grandchild. */
+    const childPages = pages
+      .filter((candidate) => {
+        if (!candidate.id.startsWith(`${page.id}/`)) return false;
+        const rest = candidate.id.slice(page.id.length + 1);
+        return !rest.includes('/');
+      })
+      .sort((a, b) => a.data.nav_label.localeCompare(b.data.nav_label));
+
+    /** A page may not name a product that has no record. */
+    const pageProducts = page.data.products.map((id) => {
+      const product = products.find((candidate) => candidate.id === id);
+      if (!product) {
+        throw new Error(
+          `Page "${page.id}" lists product "${id}", which has no record in src/content/products/.`,
+        );
+      }
+      return product;
+    });
+
+    return {
+      params: { slug: page.id },
+      props: { page, products: pageProducts, childPages },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+const { page, products, childPages } = Astro.props;
+const { Content } = await render(page);
+const { type } = page.data;
+---
+
+{
+  type === 'hub' && (
+    <HubLayout page={page} children_pages={childPages}>
+      <Content />
+    </HubLayout>
+  )
+}
+
+{
+  type === 'guide' && (
+    <GuideLayout page={page}>
+      <Content />
+    </GuideLayout>
+  )
+}
+
+{
+  type === 'trust' && (
+    <TrustLayout page={page}>
+      <Content />
+    </TrustLayout>
+  )
+}
+
+{
+  (type === 'comparison' || type === 'head-to-head') && (
+    <ComparisonLayout page={page} products={products} children_pages={childPages}>
+      <Content />
+    </ComparisonLayout>
+  )
+}
