@@ -1,0 +1,30 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Galaxy Bronze Star ILF Recurve Limbs
+maker: Galaxy Archery
+category: limb
+price:
+  value: 99.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Material
+    value: Fiberglass facing over a hard maple wood core
+    source: maker
+  - label: Length
+    value: Short, medium or long
+    source: maker
+  - label: Draw weight
+    value: 16 to 40 lb, in 2 lb steps
+    source: maker
+  - label: Limb fitting
+    value: ILF, also fits Hoyt Grand Prix risers
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Bronze Star limbs]"
+limitation: The published draw weight range tops out at 40 lb, so an archer who wants more will need a different limb.
+suits: A beginner barebow archer, or anyone who wants to feel what a wood-core limb shoots like before paying for carbon.
+tradeoff: The Galaxy Bronze Star ILF Recurve Limbs cost a third of the WNS Motive C5, and give up the speed and stiffness a carbon limb is built for.
