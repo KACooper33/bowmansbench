@@ -1,0 +1,30 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: WNS Motive C5 Carbon Foam ILF Recurve Limbs
+maker: WNS
+category: limb
+price:
+  value: 149.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Material
+    value: Carbon fibre facing over a foam core
+    source: maker
+  - label: Draw weight
+    value: 20 to 46 lb, in 2 lb steps
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Length
+    value: Not published on this listing
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: WNS Motive C5 limbs]"
+limitation: WNS does not publish a length option on this listing, unlike the Galaxy Bronze Star, which lists short, medium and long.
+suits: An archer who has outgrown an entry-level limb and wants more speed without paying for a top-tier carbon limb.
+tradeoff: The WNS Motive C5 Carbon Foam ILF Recurve Limbs cost 50 dollars more than the Galaxy Bronze Star and publish a draw weight range that runs 6 lb higher at the top end.
