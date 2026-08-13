@@ -12,6 +12,17 @@ import { z } from 'astro/zod';
 /** Every number states where it came from. CLAUDE.md rule 4. */
 const sourceMark = z.enum(['measured', 'maker']);
 
+/**
+ * A price has a third possible origin that a spec does not.
+ *
+ * 'maker' is a published list price. 'retailer' is what one shop asked on the
+ * day it was checked, which is what a reader actually pays. Calling a shop's
+ * price a maker price would be false, so it gets its own value.
+ *
+ * Specs stay measured-or-maker. Only prices may be 'retailer'.
+ */
+const priceSourceMark = z.enum(['measured', 'maker', 'retailer']);
+
 const spec = z.object({
   label: z.string().min(1),
   value: z.union([z.string(), z.number()]),
@@ -39,8 +50,10 @@ const products = defineCollection({
     price: z.object({
       value: z.number().nonnegative(),
       currency: z.string().default('USD'),
-      source: sourceMark,
+      source: priceSourceMark,
+      /** A retailer price is only meaningful with the day it was seen. */
       checked_on: z.coerce.date(),
+      retailer: z.string().optional(),
     }),
     specs: z.array(spec).min(1),
     affiliate: z.object({

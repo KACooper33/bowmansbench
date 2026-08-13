@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: Hoyt RCRV Podium Series Grand Prix 25" ILF Recurve Riser
+maker: Hoyt
+category: riser
+price:
+  value: 399.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1190
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Not included
+    source: maker
+  - label: Construction
+    value: Machined aluminium
+    source: maker
+  - label: Limb fitting
+    value: ILF, described by the maker as Grand Prix
+    source: maker
+  - label: Lateral limb adjustment
+    value: "Yes"
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Hoyt RCRV Podium 25 riser]"
+limitation: The published specification for the Hoyt RCRV Podium lists no barebow weight mounting, and no weights are included.
+suits: An archer who wants the most expensive riser that still sits under the 500 dollar cap, from the best known name here.
+tradeoff: The Hoyt RCRV Podium Series Grand Prix 25" ILF Recurve Riser is the lightest aluminium riser on this page as published, at the highest price under the cap.

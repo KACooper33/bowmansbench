@@ -1,0 +1,36 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: Beiter Plunger
+maker: Werner Beiter
+category: plunger
+price:
+  value: 199.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Adjustment type
+    value: Micro-click spring tension adjustment
+    source: maker
+  - label: Click detents
+    value: Published as micro-click. No count is given
+    source: maker
+  - label: Spring range
+    value: Three springs, .045, .060 and .070
+    source: maker
+  - label: Construction
+    value: Refined steel cylinder, stainless harmonic steel springs, anodised aluminium scale cylinder and nut
+    source: maker
+  - label: Lengths
+    value: Short for stick-on rests, longer for bolt-on rests
+    source: maker
+  - label: In the box
+    value: Spanner, open spanner, three springs, two pins at 34 mm and 36 mm, 1.5 mm allen key
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Beiter Plunger]"
+limitation: The Beiter Plunger costs five times the price of the Shibuya DX Plunger, and no maker figure states how much a single click moves the tip.
+suits: An archer who changes plunger tension often and needs to return to an exact previous setting.
+tradeoff: The Beiter Plunger buys repeatability rather than a better shot, so it rewards an archer who already tunes deliberately.

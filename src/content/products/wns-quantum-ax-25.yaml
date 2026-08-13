@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 12 August 2026.
+# Nothing here was measured on our own bench.
+name: WNS Quantum AX 25" ILF Recurve Riser
+maker: WNS
+category: riser
+price:
+  value: 379.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-12
+specs:
+  - label: Length
+    value: 25
+    unit: in
+    source: maker
+  - label: Mass weight
+    value: 1240
+    unit: g
+    source: maker
+  - label: Weight system
+    value: Not included. Upper and lower 5/16 x 24 mounts on the back of the riser
+    source: maker
+  - label: Construction
+    value: CNC machined aluminium
+    source: maker
+  - label: Limb fitting
+    value: ILF
+    source: maker
+  - label: Plunger mounting
+    value: Dual 5/16 x 24 Berger hole and rest mounting
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: WNS Quantum AX 25 riser]"
+limitation: The WNS Quantum AX ships with no weights, and its published mounts sit on the back of the riser rather than below the grip.
+suits: An archer who wants mounting points above and below the grip, which is what the 2022 World Archery bylaw permits.
+tradeoff: The WNS Quantum AX 25" ILF Recurve Riser is the heaviest riser on this page as published, and it leaves the weight system to you.
