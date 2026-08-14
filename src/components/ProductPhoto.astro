@@ -1,6 +1,14 @@
 ---
 /**
- * A product photograph, or an honest gap where one will go.
+ * A product photograph, when there is one to show.
+ *
+ * A product with no photograph renders nothing at all. There is no placeholder
+ * box, because the site has no right to publish manufacturer or retailer
+ * product images and does not yet own most of the gear it writes about. A row
+ * of grey rectangles advertises that absence without helping anybody.
+ *
+ * Nothing needs re-enabling later. Add a `photo` to a product record and it
+ * appears, which is the same moment the right to publish it was obtained.
  *
  * Astro processes the image at build time, so the emitted file is resized and
  * converted, and width and height are set on the tag. That stops the page
@@ -16,10 +24,9 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   photo: CollectionEntry<'products'>['data']['photo'];
-  productName: string;
 }
 
-const { photo, productName } = Astro.props;
+const { photo } = Astro.props;
 
 const CREDIT_LABEL = {
   own: 'Photographed on our own bench',
@@ -41,9 +48,5 @@ const CREDIT_LABEL = {
       />
       <figcaption class="photo__credit">{CREDIT_LABEL[photo.credit]}</figcaption>
     </figure>
-  ) : (
-    <div class="photo photo--empty" role="img" aria-label={`No photograph of the ${productName} yet`}>
-      <span>No photo yet</span>
-    </div>
-  )
+  ) : null
 }

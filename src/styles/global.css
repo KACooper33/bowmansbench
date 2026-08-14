@@ -378,18 +378,6 @@ a {
   margin-top: 0.3rem;
 }
 
-.photo--empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4 / 3;
-  border: 1px dashed var(--rule);
-  background: var(--panel);
-  color: var(--ink-soft);
-  font-family: ui-sans-serif, system-ui, sans-serif;
-  font-size: 0.85rem;
-}
-
 /* Sources */
 
 .sources {
