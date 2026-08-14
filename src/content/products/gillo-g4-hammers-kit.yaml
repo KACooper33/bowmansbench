@@ -1,0 +1,38 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+#
+# This is the one product on this page where the maker publishes a ring-pass
+# claim. The claim is quoted, not treated as a guarantee for a complete bow.
+# See the page body for the distinction.
+name: Gillo G4 Hammers Weight Kit (Stainless Steel)
+maker: Gillo
+category: weight
+price:
+  value: 264.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Mass weight
+    value: 600
+    unit: g
+    source: maker
+  - label: Thread
+    value: Riser-specific mount, centre M6 screw
+    source: maker
+  - label: Material
+    value: Stainless steel
+    source: maker
+  - label: Fits
+    value: Gillo GQ, GT, G2 and Ghost risers only
+    source: maker
+  - label: Ring claim
+    value: "Maker states it \"can pass inside the 12.2 cm BB ring\" when fitted to a compatible riser"
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Gillo G4 Hammers Weight Kit]"
+limitation: Fits only Gillo GQ, GT, G2 and Ghost risers, unlike the two universal 5/16-24 weights on this page, and the maker's ring claim covers the kit fitted to a compatible riser, not a complete bow with every other attachment.
+suits: An archer who already owns a compatible Gillo riser and wants a kit designed and rated for it specifically, rather than a universal weight.
+tradeoff: The Gillo G4 Hammers Weight Kit costs more than four times the Yost Mojo Weight for less added mass, in exchange for riser-specific fit and a published ring claim neither other product on this page offers.

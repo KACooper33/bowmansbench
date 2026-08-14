@@ -1,0 +1,36 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Yost Archery Mojo Weight (16 oz.)
+maker: Yost Archery
+category: weight
+price:
+  value: 56.30
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Mass weight
+    value: 454
+    unit: g
+    source: maker
+  - label: Thread
+    value: 5/16-24, threaded bolt included
+    source: maker
+  - label: Material
+    value: 304 stainless steel
+    source: maker
+  - label: Diameter
+    value: 1.5
+    unit: in
+    source: maker
+  - label: Length
+    value: 2.25
+    unit: in
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Yost Archery Mojo Weight 16 oz]"
+limitation: Yost publishes no ring-pass claim for this weight, and a single 454 g weight is heavy enough that it may not clear the ring on some riser and limb combinations.
+suits: An archer who wants one larger weight rather than stacking several smaller ones, on a riser with a standard 5/16-24 bushing.
+tradeoff: The Yost Mojo Weight is the heaviest single weight on this page, which means it does more of the tuning work in one piece, and it is also the one most likely to need checking against the ring before an event.
