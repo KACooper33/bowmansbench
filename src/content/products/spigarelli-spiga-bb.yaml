@@ -1,0 +1,33 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Spigarelli Spiga Tab BB+ Barebow Tab
+maker: Spigarelli
+category: tab
+price:
+  value: 44.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Material
+    value: Cordovan leather face, alcantara backing
+    source: maker
+  - label: Face plate
+    value: Anodised aluminium, assembled with stainless screws
+    source: maker
+  - label: Stringwalking marks
+    value: "Etched markings for string walking, published by the maker"
+    source: maker
+  - label: Left/right
+    value: Ambidextrous, one listing for both hands
+    source: maker
+  - label: Size
+    value: Medium only
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Spigarelli Spiga Tab BB+]"
+limitation: The Spigarelli Spiga Tab BB+ ships in one size only, so an archer whose hand does not suit a medium tab has no other size to choose from this maker.
+suits: An archer who wants published stringwalking marks and does not need a choice of size, since the tab is ambidextrous and one size fits both hands the maker lists.
+tradeoff: The Spigarelli Spiga Tab BB+ costs less than the Yost and publishes a feature the Yost listing does not state, at the cost of a single fixed size.
