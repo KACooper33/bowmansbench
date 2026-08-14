@@ -50,9 +50,16 @@ const comparisons = pages
         <nav class="page__children" aria-label="Comparisons">
           <h2>Recent comparisons</h2>
           <ul>
+            {/*
+              Uses `title`, not `nav_label`. Two pages share the nav label
+              "Best for beginners", which reads correctly inside a hub, where
+              the hub supplies the context. The homepage has no such context,
+              so the same link text appeared twice pointing at different
+              pages. The titles are already distinct.
+            */}
             {comparisons.map((page) => (
               <li>
-                <a href={`/${page.id}/`}>{page.data.nav_label}</a>
+                <a href={`/${page.id}/`}>{page.data.title}</a>
               </li>
             ))}
           </ul>
