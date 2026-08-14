@@ -1,6 +1,6 @@
 ---
 title: "Best beginner takedown recurve bow"
-nav_label: "Takedown recurves"
+nav_label: "Beginner takedown recurves"
 type: comparison
 description: "Three complete takedown recurves under $160, compared on the thing that decides whether a first bow lasts: where the replacement limbs come from."
 answer_block: "The Black Hunter ILF at $159.95 is the pick: a complete ILF bow costing $60 less than this site's cheapest ILF riser and limbs bought separately. The Galaxy Sage at $149.98 publishes a plunger bushing but locks you to Sage limbs. Both Black Hunter bows ship a string silencer that World Archery barebow bans."
@@ -40,7 +40,7 @@ updated_on: 2026-08-14
 
 ## A complete ILF bow costs less than a riser and limbs
 
-This is the finding that matters, and it contradicts the advice on this site's own [beginner setups page](/bows/best-for-beginners/).
+This is the finding that matters, and it sets the price a built setup has to justify itself against. The [intermediate setups page](/bows/intermediate-setup/) answers what the extra money buys.
 
 The cheapest way to an ILF bow elsewhere on this site is the [Galaxy Crescent riser](/risers/under-500/) at $119.99 plus [Galaxy Bronze Star limbs](/limbs/carbon-vs-wood/) at $99.99. That is **$219.98** for riser and limbs.
 
