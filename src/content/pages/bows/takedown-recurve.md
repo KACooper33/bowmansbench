@@ -3,11 +3,11 @@ title: "Best beginner takedown recurve bow"
 nav_label: "Beginner takedown recurves"
 type: comparison
 description: "Three complete takedown recurves under $160, compared on the thing that decides whether a first bow lasts: where the replacement limbs come from."
-answer_block: "The Black Hunter ILF at $159.95 is the pick: a complete ILF bow costing $60 less than this site's cheapest ILF riser and limbs bought separately. The Galaxy Sage at $149.98 publishes a plunger bushing but locks you to Sage limbs. Both Black Hunter bows ship a string silencer that World Archery barebow bans."
+answer_block: "The Galaxy Sage at $149.98 is the pick. It starts at 20 lb, includes a rest, and publishes a plunger bushing. The Black Hunter ILF at $159.95 is the only ILF bow here, but starts at 30 lb and describes no rest and no bushings. Both Black Hunter bows ship a string silencer barebow bans."
 verdict:
-  overall: "Black Hunter ILF Recurve Bow, for the upgrade path"
+  overall: "Galaxy Sage 62\" Takedown Recurve Bow"
   budget: "Black Hunter 60\" Take Down Recurve Bow"
-  premium: "Galaxy Sage 62\", for the published plunger bushing"
+  premium: "Black Hunter ILF Recurve Bow, if you already draw 30 lb"
 method: "Nothing on this page was measured or shot. Every figure is the maker's or retailer's published specification, read on 14 August 2026. Where a listing does not state something, the table says so rather than assuming it."
 products:
   - black-hunter-ilf
@@ -48,7 +48,19 @@ The [Black Hunter ILF](#source-blackhunter) is **$159.95** for a complete bow: a
 
 The maker states it plainly: "Universal ILF Compatibility – Standard International Limb Fitting (ILF) for full modularity with other risers and limbs."
 
-If the upgrade path is what you care about, and for a beginner it should be, that is the cheapest entry to it on this site.
+That is the cheapest entry to ILF on this site. It is still not the bow most beginners should buy, for reasons in the next section.
+
+## What the Black Hunter ILF does not come with
+
+Being ILF is the strongest thing about this bow. Three things are missing that a beginner needs sooner.
+
+**It starts at 30 lb.** The published draw weights are 30, 35, 40, 45 and 50 lb. The Galaxy Sage starts at 20 lb. Thirty pounds is a lot for someone who has not drawn a bow before, and the [poundage guide](/guides/what-poundage-for-barebow/) on this site says to start lower than you expect, because too much draw weight early causes injuries and builds form faults.
+
+**No arrow rest.** The set contains ILF limbs, an ILF riser, a bowstring and a string silencer. The Galaxy Sage includes a stick-on rest. Nothing on the Black Hunter listing describes a rest, a shelf or how an arrow is meant to sit.
+
+**No bushings described at all.** The listing mentions no plunger bushing, no sight mount and no stabiliser bushing. The Galaxy Sage riser listing states "brass bushings for plunger, stabilizer and sight/quiver".
+
+This site has not handled the bow, so it does not claim the riser is undrilled. What it can say is that the maker describes no bushings and supplies no rest, at $159.95, while a cheaper bow publishes both. If a plunger matters to you, ask before ordering.
 
 ## Why ILF is the column that matters
 
@@ -89,17 +101,21 @@ This is not a fault in the bow. It is a part that arrives fitted, that nobody te
 
 ## Which one should you buy?
 
-**Buy the Black Hunter ILF at $159.95** if you expect to keep shooting. It is the cheapest route into ILF anywhere on this site, and ILF is what turns a first bow into a riser you keep. Remove the string silencer before a World Archery event.
+**Buy the Galaxy Sage at $149.98** unless you already draw 30 lb. It starts at 20 lb, it includes an arrow rest, and its riser publishes "brass bushings for plunger, stabilizer and sight/quiver". A plunger is the only barebow tuning device the rules allow, and this is the one bow here that says it takes one. The trade is that heavier limbs must be Sage limbs at $79.99.
 
-**Buy the Galaxy Sage at $149.98** if you want a published plunger bushing. Its riser listing states "brass bushings for plunger, stabilizer and sight/quiver", and a plunger is the one piece of barebow tuning gear the rules allow. Neither Black Hunter listing mentions one. The trade is that heavier limbs must be Sage limbs.
+**Buy the Black Hunter ILF at $159.95 if you already draw 30 lb comfortably.** It is the cheapest route into ILF on this site, and ILF is what turns a first bow into a riser you keep. Budget for an arrow rest, ask the maker about a plunger bushing before ordering, and remove the string silencer before a World Archery event.
 
 **Buy the Black Hunter 60 inch at $99.95** if the budget decides it. It is the cheapest complete bow here and it arrives with an arm guard, a finger tab, a stringer and wax. It does not claim ILF, so treat it as a bow you will replace rather than upgrade.
 
+The ILF bow is the better long-term riser and the worse first bow. That is an unusual result, and it comes down to 30 lb being the lightest limb its maker publishes.
+
 ## What none of these listings publish
 
-Mass weight. Assembled length for the ILF model. Whether either Black Hunter takes a plunger. Draw weight for the ILF model.
+Mass weight, for any of the three. Assembled length for the ILF model. Whether either Black Hunter takes a plunger, or has any bushing at all.
 
 Those gaps are shown as not stated in the table rather than filled in. When this site owns one of these bows, the weight will be measured and the table will say so on that row.
+
+Draw weight for the ILF model was listed here as unpublished until 14 August 2026. It is published, on the variant selector rather than in the description, at 30 to 50 lb. That correction is what moved this page's overall pick from the Black Hunter ILF to the Galaxy Sage, because 30 lb is the wrong place for a beginner to start.
 
 ## Where these numbers came from
 
