@@ -1,0 +1,36 @@
+# Specifications as published by Lancaster Archery Supply, 13 August 2026.
+# Nothing here was measured on our own bench.
+name: Mybo MYKAN C Stainless Steel Weight (100 Grams)
+maker: Mybo
+category: weight
+price:
+  value: 19.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-13
+specs:
+  - label: Mass weight
+    value: 100
+    unit: g
+    source: maker
+  - label: Thread
+    value: 5/16 in UNF
+    source: maker
+  - label: Material
+    value: Stainless steel, fluted base
+    source: maker
+  - label: Diameter
+    value: 50
+    unit: mm
+    source: maker
+  - label: Thickness
+    value: 15.3
+    unit: mm
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Mybo MYKAN C weight]"
+limitation: Mybo publishes no ring-pass claim for this weight on its own, and the 12.2 cm ring test applies to the complete bow, not to one weight in isolation.
+suits: An archer who wants a single, inexpensive weight to start tuning balance with a standard 5/16-24 riser bushing.
+tradeoff: The Mybo MYKAN C is the cheapest weight on this page and the lightest at 100 g, so it suits fine adjustment more than it suits carrying most of a barebow setup's added mass.
