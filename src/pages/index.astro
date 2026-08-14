@@ -13,6 +13,7 @@ import { SITE, HUBS } from '../lib/site';
 const pages = await getCollection('pages');
 
 const comparisons = pages
+  .filter((page) => !page.data.draft)
   .filter((page) => page.data.type === 'comparison' || page.data.type === 'head-to-head')
   .filter((page) => page.id.includes('/'))
   .sort((a, b) => b.data.updated_on.getTime() - a.data.updated_on.getTime())

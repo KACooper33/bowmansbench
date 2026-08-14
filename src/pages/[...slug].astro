@@ -15,10 +15,16 @@ import GuideLayout from '../layouts/GuideLayout.astro';
 import TrustLayout from '../layouts/TrustLayout.astro';
 
 export const getStaticPaths = (async () => {
-  const [pages, products] = await Promise.all([
+  const [allPages, products] = await Promise.all([
     getCollection('pages'),
     getCollection('products'),
   ]);
+
+  /**
+   * Drafts build no route, so they reach neither a reader nor the sitemap.
+   * Filtering here also keeps them out of hub child lists below.
+   */
+  const pages = allPages.filter((page) => !page.data.draft);
 
   return pages.map((page) => {
     /** Direct children only, so /risers/ does not list a grandchild. */
