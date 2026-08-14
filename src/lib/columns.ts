@@ -14,7 +14,17 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
   limb: ['Length', 'Draw weight', 'Material'],
   weight: ['Mass weight', 'Thread', 'Material'],
   arrow: ['Spine', 'Diameter', 'Grains per inch'],
-  bow: ['Riser length', 'Limb length', 'Draw weight'],
+  /**
+   * Youth and beginner bows, which are bought whole rather than as a riser
+   * and limbs.
+   *
+   * "Takedown" and "Plunger threaded" are here because they answer the two
+   * questions a parent actually has. Takedown decides whether heavier limbs
+   * can be fitted as a child grows, on the same riser. Plunger threaded
+   * decides whether the bow can take the one piece of barebow tuning gear
+   * that is legal. No retail listing frames either as a buying decision.
+   */
+  bow: ['Length', 'Draw weight', 'Takedown', 'Plunger threaded'],
 };
 
 /** Used when a category has no column list yet. */

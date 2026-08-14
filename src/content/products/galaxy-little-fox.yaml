@@ -1,0 +1,42 @@
+# Specifications as published by Lancaster Archery Supply, 14 August 2026.
+# Nothing here was measured on our own bench.
+name: Galaxy Little Fox Take-Down Recurve Bow
+maker: Galaxy Archery
+category: bow
+price:
+  value: 149.98
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 48, 54 or 58 in AMO
+    source: maker
+  - label: Draw weight
+    value: 10, 15 or 20 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, published as featuring a plunger bushing"
+    source: maker
+  - label: Brace height
+    value: 6.5 to 7.5 in
+    source: maker
+  - label: Riser
+    value: White oak, Dymondwood and maple
+    source: maker
+  - label: Limbs
+    value: Hard maple and black fibreglass
+    source: maker
+  - label: Dexterity
+    value: Right and left hand
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Little Fox]"
+limitation: At $149.98 the Galaxy Little Fox is the most expensive bow on this page, and its published draw weights stop at 20 lb.
+suits: A parent who wants one bow to last several years, in a choice of three lengths, with a plunger bushing already there.
+tradeoff: The Galaxy Little Fox costs three times the cheapest bow here and is the only one besides the PSE Razorback Jr. published as taking a plunger.
