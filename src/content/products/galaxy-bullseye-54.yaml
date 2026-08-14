@@ -1,0 +1,42 @@
+# Specifications as published by Lancaster Archery Supply, 14 August 2026.
+# Nothing here was measured on our own bench.
+name: Galaxy Bullseye 54" Takedown Recurve Bow
+maker: Galaxy Archery
+category: bow
+price:
+  value: 129.98
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 54 in
+    source: maker
+  - label: Draw weight
+    value: 10, 15, 20 or 25 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Plunger threaded
+    value: Not stated. Stabiliser and sight or quiver bushings only
+    source: maker
+  - label: Brace height
+    value: 6.5 to 7.5 in
+    source: maker
+  - label: Riser
+    value: Laminated wood, cut past centre with a crowned shelf
+    source: maker
+  - label: Limbs
+    value: White fibreglass, phenolic reinforced tips
+    source: maker
+  - label: Dexterity
+    value: Right and left hand
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Bullseye 54]"
+limitation: The listing does not state a plunger bushing, unlike the Galaxy Little Fox from the same maker.
+suits: A young archer who needs the widest published draw weight range on this page, up to 25 lb on the same riser.
+tradeoff: The Galaxy Bullseye 54" offers more draw weight steps than any other bow here and publishes no plunger bushing.

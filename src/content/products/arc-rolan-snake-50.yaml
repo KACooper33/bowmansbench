@@ -1,0 +1,36 @@
+# Specifications as published by Lancaster Archery Supply, 14 August 2026.
+# Nothing here was measured on our own bench.
+name: Arc Rolan Snake 50" Recurve Bow
+maker: Arc Rolan
+category: bow
+price:
+  value: 54.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 50 in
+    source: maker
+  - label: Draw weight
+    value: 16 lb at 24 in
+    source: maker
+  - label: Takedown
+    value: No, one-piece composite
+    source: maker
+  - label: Plunger threaded
+    value: Not stated
+    source: maker
+  - label: Maximum draw length
+    value: Published for draw lengths not exceeding 26 in
+    source: maker
+  - label: Dexterity
+    value: Right and left hand
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Arc Rolan Snake 50]"
+limitation: One piece and one draw weight, so nothing can be changed as a young archer grows, and the maker publishes a 26 in draw length ceiling.
+suits: Family recreation and a first bow where low cost and durability matter more than any upgrade path.
+tradeoff: The Arc Rolan Snake 50" is the most durable-sounding bow here and the one with no upgrade route at all.

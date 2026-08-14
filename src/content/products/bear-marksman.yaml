@@ -1,0 +1,43 @@
+# Specifications as published by Lancaster Archery Supply, 14 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Takedown is recorded as not stated. Lancaster describes the takedown bows on
+# this page as "Design: Take-down recurve" and lists a take-down riser and
+# limbs in the box. This listing says "Design: Youth Recurve Bow" and includes
+# only a bow and a string. That is a strong signal it is one piece, but the
+# listing does not say so, and the page reports it that way.
+name: Bear Marksman Youth Recurve Bow
+maker: Bear Archery
+category: bow
+price:
+  value: 49.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 60 in AMO
+    source: maker
+  - label: Draw weight
+    value: 23 lb maximum, one weight only
+    source: maker
+  - label: Takedown
+    value: Not stated. Ships as a bow and a string
+    source: maker
+  - label: Plunger threaded
+    value: Not stated
+    source: maker
+  - label: Brace height
+    value: 7.875
+    unit: in
+    source: maker
+  - label: Dexterity
+    value: Right hand only
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Bear Marksman]"
+limitation: One published draw weight and no stated takedown, so there is no route to heavier limbs as a young archer grows.
+suits: An archer who already knows 23 lb suits them, and who wants the longest bow here at the second lowest price.
+tradeoff: The Bear Marksman is the longest bow on this page at 60 in and the only one sold in right hand only, with no published upgrade path.
