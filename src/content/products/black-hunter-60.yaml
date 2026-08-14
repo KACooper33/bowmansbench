@@ -1,0 +1,43 @@
+# Specifications as published by Blackhunter Archery, 14 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Brand name allowlisted. See black-hunter-ilf.yaml and ALLOWED_NAMES in
+# scripts/check-content.mjs.
+name: Black Hunter 60" Take Down Recurve Bow
+maker: Blackhunter Archery
+category: bow
+price:
+  value: 99.95
+  currency: USD
+  source: retailer
+  retailer: Blackhunter Archery
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 60 in
+    source: maker
+  - label: Draw weight
+    value: 20, 25, 30, 40, 45, 50, 55 or 60 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Not stated. ILF is not claimed for this model
+    source: maker
+  - label: Plunger threaded
+    value: Not stated
+    source: maker
+  - label: Draw length
+    value: 28
+    unit: in
+    source: maker
+  - label: In the box
+    value: Wooden riser, two limbs, string, spanner, arm guard, finger tab, string silencer, wax, stringer
+    source: maker
+affiliate:
+  merchant: Blackhunter Archery
+  placeholder: "[AFFILIATE: Black Hunter 60 Take Down]"
+limitation: The listing does not claim ILF for this model, unlike the maker's own ILF bow, so replacement limbs are not confirmed to come from the wider market.
+suits: An archer who wants the cheapest complete takedown bow here, with accessories included, and does not need a confirmed upgrade path.
+tradeoff: The Black Hunter 60" Take Down Recurve Bow is $60 less than the maker's ILF model and gives up the limb fitting that makes the ILF version worth the difference.
