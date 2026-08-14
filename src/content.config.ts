@@ -156,6 +156,18 @@ const pages = defineCollection({
           }),
         )
         .default([]),
+      /**
+       * A page that is written but not ready to publish.
+       *
+       * Drafts are excluded from the built routes, from the sitemap, from hub
+       * child lists and from the homepage. The file stays in the repository
+       * and keeps being schema-checked, so a draft cannot rot silently.
+       *
+       * This exists because an unfinished page is worse than a missing one.
+       * A stub that publishes its own placeholder text is thin content in
+       * Google's terms, and PROJECT_PLAN.md section 9 warns about exactly that.
+       */
+      draft: z.boolean().default(false),
       updated_on: z.coerce.date(),
     })
     .superRefine((data, ctx) => {
