@@ -1,0 +1,43 @@
+# Specifications as published by Blackhunter Archery, 14 August 2026.
+# Nothing here was measured on our own bench.
+#
+# The maker's brand name contains a term this site otherwise blocks. The
+# product is a takedown recurve the maker sells for target and field archery,
+# so it is in scope. See ALLOWED_NAMES in scripts/check-content.mjs.
+name: Black Hunter ILF Recurve Bow
+maker: Blackhunter Archery
+category: bow
+price:
+  value: 159.95
+  currency: USD
+  source: retailer
+  retailer: Blackhunter Archery
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 17 in riser. Assembled length not stated
+    source: maker
+  - label: Draw weight
+    value: Not stated on this listing
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: "ILF, published as standard International Limb Fitting"
+    source: maker
+  - label: Plunger threaded
+    value: Not stated
+    source: maker
+  - label: Limbs
+    value: Bamboo core, matte black fibreglass
+    source: maker
+  - label: In the box
+    value: ILF riser, ILF limbs, bowstring, string silencer
+    source: maker
+affiliate:
+  merchant: Blackhunter Archery
+  placeholder: "[AFFILIATE: Black Hunter ILF Recurve Bow]"
+limitation: The listing states no draw weight range, no assembled length and no plunger bushing, and it ships a string silencer that is not legal in World Archery barebow.
+suits: An archer who wants the cheapest route into ILF, where limbs come from the whole market rather than from one maker.
+tradeoff: The Black Hunter ILF Recurve Bow is the only complete ILF bow on this site and costs less than the cheapest ILF riser and limb pair bought separately.

@@ -51,8 +51,51 @@ const BRAND_WITHOUT_APOSTROPHE = /Bowmans\s+Bench/i;
  */
 const SCOPE_EXEMPTION = '<!-- allow-scope-terms -->';
 
+/**
+ * Proper nouns that contain a banned term but are not out-of-scope topics.
+ *
+ * Some target and field archery equipment carries hunting-flavoured branding.
+ * A takedown recurve is in scope whatever its maker called it, and a reader is
+ * better served by the product's real name than by a euphemism.
+ *
+ * This is an allowlist of exact strings, not a relaxation of the rule. The
+ * banned terms still block everywhere else, including inside these same files.
+ * Every match is reported on each build so the list stays visible and cannot
+ * grow unnoticed.
+ *
+ * Add a name here only when the product itself is in scope. Never add one to
+ * make a page about hunting build.
+ */
+const ALLOWED_NAMES = [
+  // Blackhunter Archery takedown recurves, sold by the maker for target and
+  // field archery. Three spellings are needed: the product name as written,
+  // the joined form used in the domain and in anchor ids, and the hyphenated
+  // form used in product ids and file names.
+  'Black Hunter',
+  'blackhunter',
+  'black-hunter',
+  // Samick's store URL and brand string. The Sage is a target takedown recurve.
+  'samickhunting.com',
+  'Samick Hunting',
+];
+
 const failures = [];
 const exemptions = [];
+const allowedNameHits = [];
+
+/**
+ * Removes allowed proper nouns before the banned-term scan, so the terms
+ * inside them cannot trigger. Anything outside a listed name still counts.
+ */
+function withoutAllowedNames(line) {
+  let out = line;
+  for (const name of ALLOWED_NAMES) {
+    if (!out.toLowerCase().includes(name.toLowerCase())) continue;
+    allowedNameHits.push(name);
+    out = out.replace(new RegExp(name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), ' ');
+  }
+  return out;
+}
 
 function firstBannedTerm(haystack) {
   const lower = haystack.toLowerCase();
@@ -60,7 +103,7 @@ function firstBannedTerm(haystack) {
 }
 
 function checkPath(relativePath) {
-  const term = firstBannedTerm(relativePath);
+  const term = firstBannedTerm(withoutAllowedNames(relativePath));
   if (term) {
     failures.push(
       `${relativePath}  banned term "${term}" in the file path. This topic is out of scope permanently.`,
@@ -72,7 +115,7 @@ function checkText(relativePath, text) {
   text.split('\n').forEach((line, index) => {
     const lineNumber = index + 1;
 
-    const term = firstBannedTerm(line);
+    const term = firstBannedTerm(withoutAllowedNames(line));
     if (term && line.includes(SCOPE_EXEMPTION)) {
       exemptions.push(`${relativePath}:${lineNumber}  names "${term}" on purpose`);
     } else if (term) {
@@ -127,6 +170,16 @@ if (exemptions.length > 0) {
     `\ncheck:content: ${exemptions.length} line(s) name an out-of-scope topic deliberately:`,
   );
   for (const exemption of exemptions) console.log(`  ${exemption}`);
+  console.log('');
+}
+
+if (allowedNameHits.length > 0) {
+  const counts = new Map();
+  for (const name of allowedNameHits) counts.set(name, (counts.get(name) ?? 0) + 1);
+  console.log(
+    `\ncheck:content: ${counts.size} allowed product name(s) contain a banned term:`,
+  );
+  for (const [name, count] of counts) console.log(`  ${name}  ${count} line(s)`);
   console.log('');
 }
 

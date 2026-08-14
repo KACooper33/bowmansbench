@@ -1,0 +1,47 @@
+# Specifications as published by Lancaster Archery Supply, 14 August 2026.
+# Nothing here was measured on our own bench.
+#
+# Sold as the Samick Sage by the maker and as the Galaxy Sage by Lancaster.
+# Galaxy is the United States brand for Samick-made bows. The two listings
+# publish different draw weight ranges for the same model, which the page
+# reports.
+name: Galaxy Sage 62" Takedown Recurve Bow
+maker: Galaxy Archery
+category: bow
+price:
+  value: 149.98
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-14
+specs:
+  - label: Length
+    value: 62 in
+    source: maker
+  - label: Draw weight
+    value: 20 to 55 lb per Lancaster. Samick publishes 25 to 60 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Limb fitting
+    value: Sage fitting, single tapered knob and metal limb pocket. Not ILF
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, riser listing states brass bushings for a plunger"
+    source: maker
+  - label: Riser
+    value: Laminated Dymondwood, oak and hard maple, cut past centre
+    source: maker
+  - label: Limbs
+    value: Hard maple and black fibreglass, phenolic reinforced tips
+    source: maker
+  - label: In the box
+    value: Riser, limbs, stick-on rest, B-50 string, nok-set
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Sage 62]"
+limitation: The limb fitting is the Sage pattern rather than ILF, so heavier limbs must be Sage limbs, and the two brands publish different draw weight ranges for the same bow.
+suits: An archer who wants a plunger bushing and a known upgrade path within one maker's range, at the price of a complete bow.
+tradeoff: The Galaxy Sage 62" costs $9.97 less than the Black Hunter ILF and publishes a plunger bushing the ILF bow does not, in exchange for limbs that must come from one maker.
