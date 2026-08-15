@@ -1,8 +1,15 @@
-# Specifications as published by Sportsman's Warehouse, 14 August 2026.
-# Nothing here was measured on our own bench yet.
+# Published figures are from Sportsman's Warehouse, 14 August 2026.
 #
-# This is the one bow on the page the site owns. Measured values and own
-# photographs replace the published figures when they are taken.
+# Mass weight is the first measured value on this site, taken 14 August 2026.
+# Weighed on a kitchen scale in ounces, unstrung, with the aftermarket Stonic
+# arrow rest fitted and the cushion plunger removed.
+#
+#   unstrung  1 lb 12.16 oz  = 28.16 oz = 798.3 g
+#   strung    1 lb 12.4 oz   = 28.4 oz  = 805.1 g
+#
+# The 6.8 g difference is the bowstring, which is a plausible weight for the
+# Dacron string supplied. The unstrung figure is published because that is the
+# convention makers use, and it is the one that compares against their numbers.
 #
 # PSE's own store does not list this bow. The product URL redirects to their
 # homepage and their site search returns nothing for it, checked 14 August
@@ -30,6 +37,10 @@ specs:
   - label: Plunger threaded
     value: "Yes, published as threaded for a cushion plunger"
     source: maker
+  - label: Mass weight
+    value: 798
+    unit: g
+    source: measured
   - label: Brace height
     value: 6.5
     unit: in

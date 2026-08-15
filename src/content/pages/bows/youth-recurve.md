@@ -8,7 +8,7 @@ verdict:
   overall: "Galaxy Bullseye 54\" Takedown Recurve Bow"
   budget: "Arc Rolan Snake 50\" Recurve Bow"
   premium: "Galaxy Little Fox Take-Down Recurve Bow"
-method: "Nothing on this page has been measured yet. Every figure is the maker's published specification as listed by Lancaster Archery Supply and Sportsman's Warehouse, read on 14 August 2026. Where a listing does not state something, the table says so rather than assuming it. One bow here is owned and will carry measured values once they are taken."
+method: "One figure on this page was measured here: the mass weight of the PSE Razorback Jr., weighed on a kitchen scale on 14 August 2026, unstrung, with an aftermarket arrow rest fitted and the plunger removed. Everything else is the maker's published specification as listed by Lancaster Archery Supply and Sportsman's Warehouse, read on 14 August 2026, and marked as such. Where a listing does not state something, the table says so rather than assuming it."
 products:
   - galaxy-bullseye-54
   - galaxy-little-fox
@@ -96,10 +96,29 @@ This is the kind of error that spreads. A specification gets copied from a retai
 
 Beginner sets, the $15 to $60 bow-and-two-arrows kits, are a different purchase and are not compared here. They are toys that shoot, and they are fine at that, but nothing about them grows with a child.
 
-Measured weights and photographs. One of these bows is owned by this site and none of the figures above have been checked against it yet. When they are, the table will say measured on that row and the method section will say what was used.
+Measured weights for five of the six bows. Only the PSE Razorback Jr. is owned here, and it is the only row carrying a measured figure. The other five are published numbers, and none of their makers publishes a mass weight at all.
+
+Photographs. The site has no right to publish maker or retailer product images, so it publishes none. That changes when permission is obtained or when a bow is photographed here.
+
+## The first weight measured on this site
+
+No maker on this page publishes a mass weight. Not one of the six listings states how heavy the bow is, which is the sort of gap this site exists to fill.
+
+The PSE Razorback Jr. was weighed here on 14 August 2026, on a kitchen scale reading ounces.
+
+| Condition | Weight |
+|---|---|
+| Unstrung, aftermarket rest fitted, plunger removed | **1 lb 12.16 oz, 798 g** |
+| Strung, otherwise the same | 1 lb 12.4 oz, 805 g |
+
+The 6.8 g difference between them is the bowstring, which is about right for the Dacron string supplied. The unstrung figure is the one in the table, because that is the convention makers use when they publish a mass weight.
+
+Two things that number is not. It is not the bow as it left the factory, because the stock rest has been replaced. And it is not a claim about the other five bows, whose weights remain unknown.
+
+For scale, 798 g for a complete 54 inch bow with limbs is lighter than the bare [Galaxy Crescent riser](/risers/under-500/) at a published 912 g, with no limbs on it at all. A youth bow has to be light enough for a child to hold up, and this is what that looks like.
 
 ## Where these numbers came from
 
-Five bows are as published by [Lancaster Archery Supply](#source-lancaster-youth) and one by [Sportsman's Warehouse](#source-sportsmans-razorback), all read on 14 August 2026.
+Five bows are as published by [Lancaster Archery Supply](#source-lancaster-youth) and one by [Sportsman's Warehouse](#source-sportsmans-razorback), all read on 14 August 2026. The mass weight of the Razorback Jr. was measured here and is marked measured in the table.
 
 Prices are one retailer's on one day. Youth bow stock moves faster than adult gear, and the Razorback was already unavailable to ship on the day it was checked.
