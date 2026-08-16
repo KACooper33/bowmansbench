@@ -2,13 +2,13 @@
 title: "Contact"
 nav_label: "Contact"
 type: trust
-description: "How to reach Bowman's Bench about a correction, a specification, a product, or anything on this site that is wrong."
+description: "How to reach The Bow Bench about a correction, a specification, a product, or anything on this site that is wrong."
 updated_on: 2026-08-13
 ---
 
 ## How to reach me
 
-[PLACEHOLDER: put the contact address here. A role address on the domain, such as hello@bowmansbench.com, is better than a personal inbox on a public page. It can be forwarded to your own mail, it survives a change of provider, and it keeps a personal address out of the reach of scrapers.]
+[PLACEHOLDER: put the contact address here. A role address on the domain, such as hello@thebowbench.com, is better than a personal inbox on a public page. It can be forwarded to your own mail, it survives a change of provider, and it keeps a personal address out of the reach of scrapers.]
 
 ## Corrections come first
 

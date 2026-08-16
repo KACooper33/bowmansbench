@@ -6,7 +6,7 @@ import ruleChecks from './src/integrations/rule-checks.mjs';
 // trailingSlash defaults to 'ignore' in Astro 7. Set it to 'always', or the
 // built URLs will not match the pattern in PROJECT_PLAN.md section 3.
 export default defineConfig({
-  site: 'https://bowmansbench.com',
+  site: 'https://thebowbench.com',
   trailingSlash: 'always',
   build: {
     format: 'directory',

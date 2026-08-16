@@ -2,7 +2,7 @@
 title: "Affiliate disclosure"
 nav_label: "Disclosure"
 type: trust
-description: "How Bowman's Bench earns money, what that does and does not change about the recommendations, and how the numbers on this site are produced."
+description: "How The Bow Bench earns money, what that does and does not change about the recommendations, and how the numbers on this site are produced."
 sources:
   - id: ftc-endorsement-guides
     title: "FTC: the Endorsement Guides, what people are asking"
@@ -17,9 +17,9 @@ sources:
 updated_on: 2026-08-12
 ---
 
-## How Bowman's Bench makes money
+## How The Bow Bench makes money
 
-Bowman's Bench earns a commission when a reader buys through some of the links on this site.
+The Bow Bench earns a commission when a reader buys through some of the links on this site.
 
 The price you pay is the same either way. A commission is paid by the retailer out of the sale, not added to your total.
 

@@ -5,9 +5,19 @@
  */
 
 export const SITE = {
-  /** Always with the apostrophe. CLAUDE.md. */
-  name: "Bowman's Bench",
-  url: 'https://bowmansbench.com',
+  /**
+   * Renamed on 15 August 2026, before any domain was bought and before
+   * launch. The old name was "Bowman's Bench". allow-old-brand
+   *
+   * Three reasons. The apostrophe could never appear in the domain, so the
+   * brand and the URL never matched. "Bowman's Best" is a Topps trading-card
+   * brand, which is the same possessive construction. And a heard name that
+   * cannot be spelled costs type-in traffic.
+   *
+   * "The" is part of the name because it is part of the domain.
+   */
+  name: 'The Bow Bench',
+  url: 'https://thebowbench.com',
   tagline: 'Archery gear for archers who shoot without a sight.',
   author: 'K. Adem Cooper',
   /**
@@ -43,4 +53,4 @@ export const COMPARISON_ROUTE_PREFIXES = HUBS.map((hub) => `/${hub.path}/`);
 
 /** FTC requires a clear disclosure near every affiliate link. */
 export const AFFILIATE_DISCLOSURE =
-  'Bowman’s Bench earns a commission on some links on this page. This costs you nothing and does not change which products are recommended.';
+  'The Bow Bench earns a commission on some links on this page. This costs you nothing and does not change which products are recommended.';

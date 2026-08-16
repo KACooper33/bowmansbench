@@ -1,8 +1,8 @@
-# Bowman's Bench
+# The Bow Bench
 
 An affiliate site about archery gear, for archers who shoot without a sight.
 
-Site: bowmansbench.com
+Site: thebowbench.com
 Status: pre-launch
 
 The core content type is the product comparison page. Revenue comes from SEO

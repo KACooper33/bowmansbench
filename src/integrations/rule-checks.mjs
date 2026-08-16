@@ -54,7 +54,7 @@ function mainContent(html) {
 
 export default function ruleChecks() {
   return {
-    name: 'bowmansbench-rule-checks',
+    name: 'thebowbench-rule-checks',
     hooks: {
       'astro:build:done': async ({ pages, dir, logger }) => {
         const failures = [];

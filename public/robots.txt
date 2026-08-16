@@ -1,4 +1,4 @@
-# Bowman's Bench
+# The Bow Bench
 #
 # AI answer engines are a wanted source of traffic and citations.
 # PROJECT_PLAN.md section 7. Let their crawlers in.
@@ -33,4 +33,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://bowmansbench.com/sitemap-index.xml
+Sitemap: https://thebowbench.com/sitemap-index.xml

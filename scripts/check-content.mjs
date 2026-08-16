@@ -34,8 +34,19 @@ const BANNED_TERMS = [
   'broadhead',
 ];
 
-/** The brand keeps its apostrophe in all text. CLAUDE.md. */
-const BRAND_WITHOUT_APOSTROPHE = /Bowmans\s+Bench/i;
+/**
+ * The site was renamed to "The Bow Bench" on 15 August 2026, before launch and
+ * before any domain was bought.
+ *
+ * This replaces the old rule, which enforced the apostrophe in "Bowman's
+ * Bench". The new name has no apostrophe, so that rule is gone. This one
+ * catches the old name and the old domain instead, because stale text is
+ * pasted back in far more easily than it is noticed.
+ *
+ * A line that names the old brand on purpose carries OLD_BRAND_EXEMPTION.
+ */
+const OLD_BRAND = /Bowman.?s\s+Bench|bowmansbench/i;
+const OLD_BRAND_EXEMPTION = 'allow-old-brand';
 
 /**
  * A single line may name an out-of-scope topic on purpose.
@@ -124,9 +135,9 @@ function checkText(relativePath, text) {
       );
     }
 
-    if (BRAND_WITHOUT_APOSTROPHE.test(line)) {
+    if (OLD_BRAND.test(line) && !line.includes(OLD_BRAND_EXEMPTION)) {
       failures.push(
-        `${relativePath}:${lineNumber}  the brand needs its apostrophe. Write "Bowman's Bench".`,
+        `${relativePath}:${lineNumber}  names the old brand. Write "The Bow Bench", or thebowbench.com.`,
       );
     }
   });
