@@ -115,6 +115,26 @@ The 6.8 g difference between them is the bowstring, which is about right for the
 
 Two things that number is not. It is not the bow as it left the factory, because the stock rest has been replaced. And it is not a claim about the other five bows, whose weights remain unknown.
 
+### Tiller, and a brace height that proves less than it looks
+
+Three more measurements were taken the same day, with a tape measure, braced, perpendicular to the string.
+
+| From the string to | Reading |
+|---|---|
+| Upper limb butt | 7 1/8 in |
+| Lower limb butt | 7 1/16 in |
+| Grip pivot point | 7 1/2 in |
+
+**Tiller is +1/16 in**, upper minus lower. That is a small positive tiller, and on a bow at this price it says the two limbs are reasonably well matched. No maker at this end of the market publishes tiller, and no review of a youth bow reports it.
+
+**The brace height reads 7 1/2 in against a published 6 1/2 in**, and that difference is worth an inch of caution rather than a headline.
+
+The string is the original, but it has been taken off and refitted several times. Twists set brace height, and a string that has been restrung an unknown number of times does not carry the factory twist count. So this figure describes this bow today. It is not evidence that the published figure is wrong.
+
+The direction is worth noting too. Dacron stretches with use, which lowers brace height over time. This one reads high, which points at twists picked up during restringing rather than at anything about the product.
+
+Tiller survives that problem, because it is a difference between two limbs measured in one session at one brace height. That is why it is reported as a finding and the brace height is not.
+
 For scale, 798 g for a complete 54 inch bow with limbs is lighter than the bare [Galaxy Crescent riser](/risers/under-500/) at a published 912 g, with no limbs on it at all. A youth bow has to be light enough for a child to hold up, and this is what that looks like.
 
 ## Where these numbers came from

@@ -11,6 +11,19 @@
 # Dacron string supplied. The unstrung figure is published because that is the
 # convention makers use, and it is the one that compares against their numbers.
 #
+# Tiller and brace height measured 14 August 2026 with a tape measure, braced,
+# perpendicular to the string:
+#
+#   upper limb butt to string  7 1/8 in
+#   lower limb butt to string  7 1/16 in   -> tiller +1/16 in
+#   grip pivot point to string 7 1/2 in
+#
+# The brace height figure is NOT evidence that the published 6 1/2 in is wrong.
+# The string is the original but has been taken off and refitted several times,
+# so its twist count is not the factory count, and twists are what set brace
+# height. Tiller survives that, because it is a difference between two limbs
+# measured in one session at one brace height.
+#
 # PSE's own store does not list this bow. The product URL redirects to their
 # homepage and their site search returns nothing for it, checked 14 August
 # 2026. Retailers still stock it. That is reported on the page rather than
@@ -41,10 +54,16 @@ specs:
     value: 798
     unit: g
     source: measured
+  - label: Tiller
+    value: 1/16 in positive, upper limb butt further from the string
+    source: measured
   - label: Brace height
     value: 6.5
     unit: in
     source: maker
+  - label: Brace height as set up
+    value: 7.5 in on this bow, with a string of unknown twist count
+    source: measured
   - label: Construction
     value: Hardwoods
     source: maker
