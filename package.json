@@ -1,9 +1,9 @@
 {
-  "name": "bowmansbench",
+  "name": "thebowbench",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Bowman's Bench — archery gear for archers who shoot without a sight",
+  "description": "The Bow Bench — archery gear for archers who shoot without a sight",
   "scripts": {
     "dev": "astro dev",
     "check:content": "node scripts/check-content.mjs",

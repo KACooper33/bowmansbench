@@ -1,5 +1,5 @@
 ---
-title: "About Bowman's Bench"
+title: "About"
 nav_label: "About"
 type: trust
 description: "Who writes this site, how new they are to archery, and why every number here is marked as either measured or taken from the maker."
@@ -8,7 +8,7 @@ updated_on: 2026-08-13
 
 ## Who writes this
 
-Bowman's Bench is written by K. Adem Cooper.
+The Bow Bench is written by K. Adem Cooper.
 
 I am new to archery. My family took it up, I came along, and I shoot barebow, which is the recurve division without a sight, a clicker or stabilisers.
 
