@@ -1,5 +1,5 @@
 ---
-title: "About The Bow Bench"
+title: "About"
 nav_label: "About"
 type: trust
 description: "Who writes this site, how new they are to archery, and why every number here is marked as either measured or taken from the maker."
