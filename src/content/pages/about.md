@@ -2,19 +2,23 @@
 title: "About"
 nav_label: "About"
 type: trust
-description: "Who writes this site, how new they are to archery, and why every number here is marked as either measured or taken from the maker."
-updated_on: 2026-08-13
+description: "Who writes this site, why he has not shot a recurve yet, and why every number here is marked as either measured or taken from the maker."
+updated_on: 2026-08-18
 ---
 
 ## Who writes this
 
 The Bow Bench is written by K. Adem Cooper.
 
-I am new to archery. My family took it up, I came along, and I shoot barebow, which is the recurve division without a sight, a clicker or stabilisers.
+I am new to archery, and I want to be exact about how new.
+
+My daughter shoots a recurve. I set it up, I string it, I measure it, and I have not yet shot one myself. A recurve of my own is the next thing I buy, and I am buying it to shoot alongside her.
+
+The division I am learning is barebow: the recurve division without a sight, a clicker or stabilisers. What I want out of it is target shooting as a reason to be outdoors, and eventually a few local events.
 
 ## What being new means for what you read here
 
-I am not going to tell you I have shot for twenty years. I have not, and you would find out.
+I am not going to tell you I have shot for twenty years. Not twenty, not two. This site starts before my first arrow, and you would find out anyway.
 
 So this site does not ask you to trust my judgement. It asks you to check my working. That is a different promise, and it is one I can actually keep.
 
@@ -32,6 +36,14 @@ Outside the shooting sports it is fishing, hiking, and road and mountain biking.
 
 None of that makes me a barebow coach. It does mean I know what an honest gear review looks like, because I have wanted one and not found it.
 
+## What I own
+
+One bow in this house is in scope for this site, and it is not mine. My daughter shoots a PSE Razorback Jr.
+
+It is also the only bow on this site carrying numbers taken here rather than copied from a maker. Its mass weight, its tiller and its braced measurements are on the [youth recurve page](/bows/youth-recurve/), with the date, the scale and the tape measure written down. If you want to know how careful this site is, that page is where to check.
+
+The recurve I buy for myself is the next purchase, and it gets the same treatment when it arrives: weighed, measured, and published with the method next to it. Until then, no page here claims I have shot the equipment it compares.
+
 ## Why this site exists
 
 When my family started, I went looking for the barebow equivalent of what I would want before buying a bike or a shotgun. A table of real numbers. A clear statement of what the rules allow. Somebody willing to say a cheap item is good enough.
@@ -46,6 +58,7 @@ So the site is the reference I wanted, built as I learn, with the working shown.
 - Take payment for a recommendation. See the [disclosure page](/disclosure/) for how the site earns.
 - Write about hunting, compound bows or crossbows. Different sport, different site. <!-- allow-scope-terms -->
 - Claim to have tested equipment I have only read about.
+- Claim to shoot at a level, or for a length of time, that I do not.
 
 ## Tell me when I am wrong
 
@@ -59,7 +72,7 @@ Corrections are logged rather than quietly edited, because a site that claims to
 
 Being straight about the gaps, since this site is new too.
 
+- I have not yet shot the division this site is about. That is the largest gap here, and it closes when I buy a recurve.
+- I do not belong to a club or a range. Joining one, and shooting a first local event, is the plan rather than the record.
 - Most comparison pages are built on published specifications, not gear held in hand. Those pages say so at the top of the method section.
-- Measured weights arrive as equipment does.
-- [PLACEHOLDER: name the club or range you shoot at, once you are settled.]
-- [PLACEHOLDER: name the bow you shoot, with its riser and limbs. Readers trust a writer who says what they own.]
+- Measured weights arrive as equipment does. One bow has been measured here so far.
