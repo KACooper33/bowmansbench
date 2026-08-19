@@ -24,12 +24,16 @@ export const SITE = {
    * The one-line bio in every page footer. The About page carries the longer
    * version.
    *
-   * It says "new to barebow" on purpose. The authority this site claims is in
-   * its method, not in the author's years, and a reader who finds out the
-   * truth later trusts nothing else on the page.
+   * It admits newness on purpose. The authority this site claims is in its
+   * method, not in the author's years, and a reader who finds out the truth
+   * later trusts nothing else on the page.
+   *
+   * It says "learning barebow", not "shooting barebow", because as of
+   * 18 August 2026 the author has not shot a recurve. This line renders in
+   * every page footer, so it must not outrun the About page.
    */
   authorBio:
-    'New to barebow, learning it with my family, and measuring everything along the way.',
+    'New to archery, learning barebow with my family, and measuring everything along the way.',
 } as const;
 
 /**
