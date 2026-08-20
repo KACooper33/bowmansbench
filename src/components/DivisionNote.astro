@@ -1,0 +1,76 @@
+---
+/**
+ * One equipment item, stated the same way everywhere it appears.
+ *
+ * The order is the whole point of this component. What the item does comes
+ * first, in plain terms, with no rulebook in the sentence. The competition rule
+ * follows as a conditional. Most readers buying a beginner recurve shoot at
+ * home and never enter anything, and a page that leads with a ban tells them a
+ * feature is a fault. PROJECT_PLAN.md section 12.4 has the search data behind
+ * that: recurve is transactional and 25,222 a month, barebow informational and
+ * 743.
+ *
+ * Use this instead of writing a rule into a comparison page by hand. If the
+ * rule changes, it changes in src/lib/divisions.ts and every use follows.
+ */
+import { equipment, DIVISIONS, type DivisionId } from '../lib/divisions';
+
+interface Props {
+  /** Equipment id from src/lib/divisions.ts. */
+  item: string;
+  /** Divisions to report. Defaults to barebow, which is this site's core. */
+  divisions?: DivisionId[];
+  /** Drop the practice sentence where the surrounding prose already said it. */
+  showPractice?: boolean;
+  /**
+   * Which rulebook to cite. Target archery pages cite Book 3, field and 3D
+   * pages cite Book 4. Barebow is the only division in both, so this only
+   * changes the barebow line, and it falls back to Book 4 where no Book 3
+   * number has been verified.
+   */
+  book?: 3 | 4;
+}
+
+const { item, divisions = ['barebow'], showPractice = true, book = 3 } = Astro.props;
+
+const entry = equipment(item);
+const columns = DIVISIONS.filter((division) => divisions.includes(division.id));
+
+/**
+ * `detail` is written as a complete statement in src/lib/divisions.ts, so it
+ * is printed on its own. An earlier version prefixed a verb derived from
+ * `status` and produced "Not permitted. Not permitted." Status now only drives
+ * the colour, which is what a second encoding of the same fact is good for.
+ */
+---
+
+<aside class="division-note" data-division-note={entry.id}>
+  <p class="division-note__label">{entry.label}</p>
+
+  {showPractice && <p class="division-note__practice">{entry.practice}</p>}
+
+  <dl class="division-note__rules">
+    {
+      columns.map((division) => {
+        const rule = entry[division.id];
+        /* Book 3 only exists for barebow, and only where verified. */
+        const useBook3 = book === 3 && Boolean(rule.book3);
+        const article = useBook3 ? rule.book3 : rule.article;
+        const label = useBook3 ? 'Book 3' : 'Book 4';
+        return (
+          <div class="division-note__rule">
+            <dt>In {division.label.toLowerCase()} competition</dt>
+            <dd data-status={rule.status}>
+              {rule.detail}.
+              <span class="division-note__article">
+                {' '}World Archery {label} article {article}.
+              </span>
+            </dd>
+          </div>
+        );
+      })
+    }
+  </dl>
+
+  {entry.nfaa && <p class="division-note__nfaa">{entry.nfaa}</p>}
+</aside>

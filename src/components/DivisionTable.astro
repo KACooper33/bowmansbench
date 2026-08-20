@@ -1,0 +1,90 @@
+---
+/**
+ * The division comparison table, rendered from src/lib/divisions.ts.
+ *
+ * Before this existed, the table was retyped by hand into the barebow vs
+ * traditional guide, and the same rules were paraphrased again on comparison
+ * pages. A rule change meant finding every copy. Now it means editing one file.
+ *
+ * `divisions` narrows the columns, because a page about a barebow riser has no
+ * use for a longbow column. `items` narrows the rows for the same reason.
+ */
+import { DIVISIONS, EQUIPMENT, equipment, type DivisionId } from '../lib/divisions';
+
+interface Props {
+  /** Column subset, in order. Defaults to all three. */
+  divisions?: DivisionId[];
+  /** Row subset, by equipment id, in order. Defaults to every item. */
+  items?: string[];
+  /** Set false to drop the article numbers on narrow pages. */
+  showArticles?: boolean;
+  caption?: string;
+}
+
+const {
+  divisions = DIVISIONS.map((division) => division.id),
+  items,
+  showArticles = true,
+  caption,
+} = Astro.props;
+
+const columns = DIVISIONS.filter((division) => divisions.includes(division.id));
+const rows = items ? items.map(equipment) : EQUIPMENT;
+
+/** Only print a footnote for the rows actually on screen. */
+const nfaaNotes = rows.filter((row) => row.nfaa);
+---
+
+<div class="table-scroll">
+  <table class="division-table">
+    {caption && <caption>{caption}</caption>}
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        {
+          columns.map((division) => (
+            <th scope="col">
+              {division.label}
+              {showArticles && <span class="division-table__article">article {division.article}</span>}
+            </th>
+          ))
+        }
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            <th scope="row">{row.label}</th>
+            {
+              columns.map((division) => {
+                const rule = row[division.id];
+                return (
+                  <td data-status={rule.status}>
+                    {rule.detail}
+                    {showArticles && <span class="division-table__article">{rule.article}</span>}
+                  </td>
+                );
+              })
+            }
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+{
+  nfaaNotes.length > 0 && (
+    <div class="division-table__nfaa">
+      <p><strong>Where the NFAA differs from World Archery</strong></p>
+      <ul>
+        {nfaaNotes.map((row) => (
+          <li>
+            <strong>{row.label}.</strong> {row.nfaa}
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
