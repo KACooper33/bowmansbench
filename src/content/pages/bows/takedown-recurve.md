@@ -3,7 +3,7 @@ title: "Best beginner takedown recurve bow"
 nav_label: "Beginner takedown recurves"
 type: comparison
 description: "Five complete takedown recurves under $160, compared on the thing that decides whether a first bow lasts: where the replacement limbs come from."
-answer_block: "The Galaxy Sage at $149.98 is the pick. It starts at 20 lb, includes a rest, and publishes a plunger bushing. The Black Hunter ILF at $159.95 is the only ILF bow here, but starts at 30 lb and describes no rest and no bushings. Both Black Hunter bows ship a string silencer barebow bans."
+answer_block: "The Galaxy Sage at $149.98 is the pick. It starts at 20 lb, includes a rest, and publishes a plunger bushing. The Black Hunter ILF at $159.95 is the only ILF bow here, but starts at 30 lb and describes no rest and no bushings. The Galaxy Aspire starts lightest, at 15 lb."
 verdict:
   overall: "Galaxy Sage 62\" Takedown Recurve Bow"
   budget: "Black Hunter 60\" Take Down Recurve Bow"
@@ -149,15 +149,15 @@ The Galaxy Aspire 66" Take-Down Recurve Bow is also the only bow on this page wi
 
 The ceiling is the trade. The Galaxy Aspire stops at 35 lb where the Galaxy Sage reaches 55 lb.
 
-### The Galaxy Aspire sells you three fittings barebow does not allow
+### What the Galaxy Aspire's four fittings are for
 
-The Lancaster listing states the Galaxy Aspire "comes ready for sight, clicker, plunger, and stabilizers."
+The Lancaster listing states the Galaxy Aspire "comes ready for sight, clicker, plunger, and stabilizers." That is four mounting points, and it is the most any bow on this page publishes.
 
-Three of those four are banned in barebow. [World Archery Book 3 article 9.3](#source-wa-book-3) allows no sight, no draw check device such as a clicker, and no stabilisers. Only the plunger is legal, and article 9.3.3 permits it explicitly.
+**If you are shooting in the garden, a sight is the fastest way to start hitting what you aim at.** Nothing stops you fitting one. A stabiliser steadies the bow, and a clicker tells you when you have reached the same draw length twice. All three are ordinary recurve equipment, and the Galaxy Aspire is the only bow here that says it takes them.
 
-This is not a fault in the bow, and a bushing you never use costs nothing. It is worth knowing before you spend money on the fittings a retail listing implies you need. The [barebow rules guide](/guides/barebow-rules/) sets out what the division does allow.
+**If you enter a barebow competition, three of the four come off.** [World Archery Book 3 article 9.3](#source-wa-book-3) allows no sight, no draw check device such as a clicker, and no stabilisers. The plunger stays: article 9.3.3 permits it explicitly. The [barebow rules guide](/guides/barebow-rules/) sets out the rest.
 
-Read the right way round, that line is good news: it is the clearest statement on this page that a bow takes a plunger, which is the one tuning device barebow permits.
+Either way that line is useful. It is the clearest statement on this page that a bow takes a plunger, and the plunger is the one tuning device that works in the garden and in the barebow division alike.
 
 ## Galaxy Aspire 66 vs Galaxy Sage 62, from the same brand
 
@@ -177,15 +177,15 @@ One difference in the limbs is worth more than the $20. Galaxy Aspire limbs are 
 
 Worth checking before ordering: Galaxy Aspire limbs were backordered at two to three weeks when this page was checked on 19 August 2026.
 
-## Both Black Hunter bows ship something barebow bans
+## Both Black Hunter bows ship a string silencer
 
-Both Black Hunter listings include a **string silencer** in the box.
+Both Black Hunter listings include a **string silencer** in the box. It is a small piece of rubber or fur fitted to the string, and it damps the noise of the shot.
 
-[World Archery Book 3 article 9.3.2](#source-wa-book-3) states: "No lip or nose marks or other attachments to the string are permitted." A string silencer is an attachment to the string.
+**Shooting at home, that is a feature you would otherwise pay for.** A quieter bow is easier on the ears over a long session and less likely to carry to a neighbour. Neither the SAS Spirit nor the Galaxy Aspire listing describes one, so on the two Black Hunter bows it arrives free.
 
-So it must come off before a World Archery barebow event. The NFAA takes the opposite position and permits string silencers in Barebow Recurve, which the [barebow rules guide](/guides/barebow-rules/) covers in full.
+**Entering a World Archery barebow event, it comes off.** [Article 9.3.2](#source-wa-book-3) states: "No lip or nose marks or other attachments to the string are permitted." A string silencer is an attachment to the string. The NFAA takes the opposite position and permits string silencers in Barebow Recurve, which the [barebow rules guide](/guides/barebow-rules/) covers in full.
 
-This is not a fault in the bow. It is a part that arrives fitted, that nobody tells you to remove, and that an equipment judge will find.
+So this is not a fault in the bow, and for most people it is the opposite. It is worth knowing only because it arrives fitted, nobody tells you it is there, and one rulebook will make you take it off.
 
 ## SAS Spirit 66 vs Black Hunter 60, four cents apart
 
@@ -197,7 +197,7 @@ The SAS Spirit 66" Take Down Recurve Bow is $99.99. The Black Hunter 60" Take Do
 
 **What replacement limbs cost.** The SAS Spirit wins this outright, and it is the more expensive fact to get wrong. [SAS Spirit limbs are published at $54.99](#source-sas-spirit-limbs) the pair. Blackhunter Archery publishes no limb price for the Black Hunter 60" at all, so the cost of moving up in poundage is unknown until you ask.
 
-**The string silencer.** The Black Hunter 60" arrives with one, and [World Archery Book 3 article 9.3.2](#source-wa-book-3) does not permit attachments to the string. The SAS Spirit listing describes no silencer, so there is nothing to remove.
+**The string silencer.** The Black Hunter 60" arrives with one and the SAS Spirit listing describes none. For shooting at home that is a point to the Black Hunter 60", because a quieter bow costs extra otherwise. It only turns into a point for the SAS Spirit if you enter a World Archery barebow event, where [article 9.3.2](#source-wa-book-3) does not permit attachments to the string and the silencer has to come off.
 
 Neither bow is ILF. The SAS Spirit uses a bolt-down pattern sized by riser, confirmed by the maker selling a [replacement limb bolt](#source-sas-limb-bolt) for the 62 and 66 inch riser. The Black Hunter 60" states no fitting at all.
 
@@ -205,15 +205,17 @@ Neither bow is ILF. The SAS Spirit uses a bolt-down pattern sized by riser, conf
 
 **Buy the Galaxy Sage at $149.98** unless you already draw 30 lb. It starts at 20 lb, it includes an arrow rest, and its riser publishes "brass bushings for plunger, stabilizer and sight/quiver". A plunger is the only barebow tuning device the rules allow, and this is the one bow here that says it takes one. The trade is that heavier limbs must be Sage limbs at $79.99.
 
-**Buy the Black Hunter ILF at $159.95 if you already draw 30 lb comfortably.** It is the cheapest route into ILF on this site, and ILF is what turns a first bow into a riser you keep. Budget for an arrow rest, ask the maker about a plunger bushing before ordering, and remove the string silencer before a World Archery event.
+**Buy the Black Hunter ILF at $159.95 if you already draw 30 lb comfortably.** It is the cheapest route into ILF on this site, and ILF is what turns a first bow into a riser you keep. Budget for an arrow rest and ask the maker about a plunger bushing before ordering. Keep the string silencer for practice, and take it off if you ever enter a World Archery event.
 
 **Buy the Black Hunter 60 inch at $99.95** if the budget decides it. It is the cheapest complete bow here and it arrives with an arm guard, a finger tab, a stringer and wax. It does not claim ILF, so treat it as a bow you will replace rather than upgrade.
 
-**Buy the SAS Spirit 66 inch at $99.99 instead** if you are a taller adult and $30 decides it. Sixty-six inches is the most forgiving length here, its $54.99 replacement limbs are the cheapest published on this page, and nothing in the box needs removing before a World Archery event. Budget for a string, a rest and a stringer, because the SAS Spirit listing describes none of them, and order by the 66 inch draw weights rather than the ones printed on the bow page.
+**Buy the SAS Spirit 66 inch at $99.99 instead** if you are a taller adult and $30 decides it. Sixty-six inches is the most forgiving length here, and its $54.99 replacement limbs are the cheapest published on this page. Budget for a string, a rest and a stringer, because the SAS Spirit listing describes none of them, and order by the 66 inch draw weights rather than the ones printed on the bow page.
 
 **Buy the Galaxy Aspire 66 inch at $129.99** if you have never drawn a bow. It starts at 15 lb, the lightest first limb on this page, and it is the only bow here with a metal riser, a published mass weight and a stated plunger provision. Add a rest, and accept a 35 lb ceiling you are unlikely to reach in barebow.
 
 The ILF bow is the better long-term riser and the worse first bow. That is an unusual result, and it comes down to 30 lb being the lightest limb its maker publishes.
+
+**If you are not competing, skip the rule notes on this page.** Most people who buy a bow at this price shoot in a garden, a field or a club session and never enter anything. Every rule quoted here applies only inside a World Archery or NFAA event. Nothing on this page is illegal to own, nothing stops you fitting a sight, and a string silencer is just a quieter bow. The rules are here for the day you want them, not as a standard to buy against.
 
 ## What none of these listings publish
 
