@@ -65,21 +65,23 @@ sources:
 updated_on: 2026-08-19
 ---
 
-## A complete ILF bow costs less than a riser and limbs
+## One bow here is ILF, and it undercuts the parts
 
-This is the finding that matters, and it sets the price a built setup has to justify itself against. The [intermediate setups page](/bows/intermediate-setup/) answers what the extra money buys.
+Four of the five bows on this page use their maker's own limb fitting. Only the Black Hunter ILF Recurve Bow uses ILF, the interchange standard, and the limb fitting column says which is which.
+
+That one bow sets the price a built setup has to justify itself against. The [intermediate setups page](/bows/intermediate-setup/) answers what the extra money buys.
 
 The cheapest way to an ILF bow elsewhere on this site is the [Galaxy Crescent riser](/risers/under-500/) at $119.99 plus [Galaxy Bronze Star limbs](/limbs/carbon-vs-wood/) at $99.99. That is **$219.98** for riser and limbs.
 
-The [Black Hunter ILF](#source-blackhunter) is **$159.95** for a complete bow: a 17 inch ILF riser, bamboo core ILF limbs and a string. That is $60.03 less than the parts, and it is ILF, so the limbs on this site's limbs page fit it.
+The [Black Hunter ILF Recurve Bow](#source-blackhunter) is **$159.95** for a complete bow: a 17 inch ILF riser, bamboo core ILF limbs and a string. That is $60.03 less than the parts, and it is ILF, so the limbs on this site's limbs page fit it.
 
-The maker states it plainly: "Universal ILF Compatibility – Standard International Limb Fitting (ILF) for full modularity with other risers and limbs."
+The maker states it plainly, as "Universal ILF Compatibility" giving "full modularity with other risers and limbs".
 
-That is the cheapest entry to ILF on this site. It is still not the bow most beginners should buy, for reasons in the next section.
+That is the cheapest entry to ILF on this site. The Black Hunter ILF Recurve Bow is still not the bow most beginners should buy, because the lightest limb its maker publishes is 30 lb.
 
 ## What the Black Hunter ILF does not come with
 
-Being ILF is the strongest thing about this bow. Three things are missing that a beginner needs sooner.
+Being ILF is the strongest thing about the Black Hunter ILF Recurve Bow. Three things are missing that a beginner needs sooner.
 
 **It starts at 30 lb.** The published draw weights are 30, 35, 40, 45 and 50 lb. The Galaxy Sage starts at 20 lb. Thirty pounds is a lot for someone who has not drawn a bow before, and the [poundage guide](/guides/what-poundage-for-barebow/) on this site says to start lower than you expect, because too much draw weight early causes injuries and builds form faults.
 
@@ -215,7 +217,7 @@ The ILF bow is the better long-term riser and the worse first bow. That is an un
 
 ## What none of these listings publish
 
-Mass weight, for four of the five. The Galaxy Aspire publishes 2.25 lb with limbs and is the exception, which is why it is called out above. Nobody else on this page states how heavy the bow is.
+Mass weight, for four of the five. The Galaxy Aspire 66" Take-Down Recurve Bow publishes 2.25 lb with limbs and is the only exception. Nobody else on this page states how heavy the bow is.
 
 Assembled length for the ILF model. Whether either Black Hunter takes a plunger, or has any bushing at all. Brace height for the SAS Spirit and the Galaxy Aspire, and whether the SAS Spirit has a bushing of any kind.
 
