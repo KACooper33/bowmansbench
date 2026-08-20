@@ -231,6 +231,130 @@ a {
   margin-top: -0.75rem;
 }
 
+/* Divisions.
+   Rendered from src/lib/divisions.ts, never written into a page by hand.
+   Status is carried on a data attribute rather than a class, so the markup
+   says what the rule is and the stylesheet decides how loud that looks. */
+
+.division-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+.division-table th,
+.division-table td {
+  border: 1px solid var(--rule);
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.division-table thead th {
+  background: var(--panel);
+}
+
+.division-table caption {
+  caption-side: top;
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  padding-bottom: 0.5rem;
+}
+
+.division-table [data-status='permitted'] {
+  color: var(--measured);
+}
+
+.division-table [data-status='banned'] {
+  color: var(--ink-soft);
+}
+
+.division-table [data-status='limited'] {
+  color: var(--placeholder);
+}
+
+/* Article numbers ride along with every cell, so a reader can check any claim.
+   They are set small and quiet because they are evidence, not content. */
+.division-table__article {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 0.15rem;
+}
+
+.division-table__nfaa {
+  font-size: 0.85rem;
+  margin-top: -0.75rem;
+}
+
+.division-table__nfaa ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.division-table__nfaa li {
+  margin-bottom: 0.35rem;
+}
+
+.division-note {
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--accent);
+  background: var(--panel);
+  padding: 0.9rem 1.1rem;
+  margin-block: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.division-note__label {
+  font-weight: 700;
+  margin: 0 0 0.4rem;
+}
+
+/* The practice sentence leads, so it gets the plain body colour. The rules
+   below it are the conditional, and are set quieter on purpose. */
+.division-note__practice {
+  margin: 0 0 0.7rem;
+}
+
+.division-note__rules {
+  margin: 0;
+}
+
+.division-note__rule {
+  margin-bottom: 0.4rem;
+}
+
+.division-note__rule dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ink-soft);
+}
+
+.division-note__rule dd {
+  margin: 0.1rem 0 0;
+}
+
+.division-note__rule dd[data-status='permitted'] {
+  color: var(--measured);
+}
+
+.division-note__rule dd[data-status='limited'] {
+  color: var(--placeholder);
+}
+
+.division-note__article,
+.division-note__nfaa {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.division-note__nfaa {
+  margin: 0.7rem 0 0;
+}
+
 /* Product blocks */
 
 .product {
