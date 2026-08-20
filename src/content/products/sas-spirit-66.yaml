@@ -23,7 +23,7 @@ specs:
     value: 22, 26, 30 or 34 lb as listed. The maker's limbs page rates these on the 62 in bow and deducts 2 lb for the 66 in, giving about 20 to 32 lb
     source: maker
   - label: Takedown
-    value: "Yes, bolted limbs. The maker sells a replacement limb bolt for the 62 and 66 in riser"
+    value: "Yes"
     source: maker
   - label: Plunger threaded
     value: Not stated. The listing describes no bushings of any kind

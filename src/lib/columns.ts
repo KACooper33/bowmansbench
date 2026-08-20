@@ -32,8 +32,18 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    *
    * It sits after "Draw weight" rather than second, as it does for risers,
    * because a bow buyer decides on draw weight first and a riser has none.
+   *
+   * "Takedown" and "Limb fitting" are two questions, and they were being
+   * answered in one cell. Takedown asks whether the bow comes apart. Limb
+   * fitting asks whose limbs go back on, which is the question the beginner
+   * takedown page is built around and the one that decides what an upgrade
+   * costs. Every row answers Takedown with Yes or No and nothing else.
+   *
+   * A listing that never mentions a fitting reads "Not stated", not "Not
+   * ILF". An omission is not a denial, and the difference is the whole
+   * distance between reporting and guessing.
    */
-  bow: ['Length', 'Draw weight', 'Mass weight', 'Takedown', 'Plunger threaded'],
+  bow: ['Length', 'Draw weight', 'Mass weight', 'Takedown', 'Limb fitting', 'Plunger threaded'],
 };
 
 /** Used when a category has no column list yet. */

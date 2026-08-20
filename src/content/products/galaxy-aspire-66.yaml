@@ -25,7 +25,7 @@ specs:
     value: 15, 20, 25, 29 or 35 lb
     source: maker
   - label: Takedown
-    value: "Yes, published as a non-ILF takedown design"
+    value: "Yes"
     source: maker
   - label: Plunger threaded
     value: "Yes, listed as coming ready for a plunger"
