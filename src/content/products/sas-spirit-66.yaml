@@ -1,0 +1,60 @@
+# Specifications as published by Southland Archery Supply, 19 August 2026.
+# Nothing here was measured on our own bench.
+#
+# The draw weight line carries a correction the maker publishes on a different
+# page from the bow. The bow listing states 22, 26, 30 and 34 lb with no
+# caveat. The limbs listing states those figures are rated on the 62 in bow and
+# says to deduct 2 lb for the 66 in bow. Both figures are given, because a
+# buyer reading only the bow page would order 2 lb heavier than they think.
+name: SAS Spirit 66" Take Down Recurve Bow
+maker: Southland Archery Supply
+category: bow
+price:
+  value: 99.99
+  currency: USD
+  source: retailer
+  retailer: Southland Archery Supply
+  checked_on: 2026-08-19
+specs:
+  - label: Length
+    value: 66 in AMO
+    source: maker
+  - label: Draw weight
+    value: 22, 26, 30 or 34 lb as listed. The maker's limbs page rates these on the 62 in bow and deducts 2 lb for the 66 in, giving about 20 to 32 lb
+    source: maker
+  - label: Takedown
+    value: "Yes, bolted limbs. The maker sells a replacement limb bolt for the 62 and 66 in riser"
+    source: maker
+  - label: Plunger threaded
+    value: Not stated. The listing describes no bushings of any kind
+    source: maker
+  - label: Limb fitting
+    value: "Bolt-down SAS Spirit pattern, sized 54 in Jr or 62/66 in. Not ILF"
+    source: maker
+  - label: Replacement limbs
+    value: $54.99 the pair, published for the 62 and 66 in bows
+    source: maker
+  - label: Riser
+    value: Chuglam, gmelina arborea and beech
+    source: maker
+  - label: Limbs
+    value: Fibreglass over maple laminations
+    source: maker
+  - label: Arrow rest
+    value: Not stated. The listing describes no rest and no shelf
+    source: maker
+  - label: Brace height
+    value: Not published by the maker
+    source: maker
+  - label: Shooter height
+    value: Published as suiting shooter heights up to 6 ft
+    source: maker
+  - label: In the box
+    value: Listed only as one 66 in archery bow. No string, rest or accessories are listed
+    source: maker
+affiliate:
+  merchant: Southland Archery Supply
+  placeholder: "[AFFILIATE: SAS Spirit 66 Take Down Recurve Bow]"
+limitation: The maker publishes less about this bow than any other on the page. No brace height, no mass weight, no bushings, no arrow rest, and a box listed as containing the bow alone. The limb fitting is a proprietary bolt-down pattern, so replacement limbs come from one maker.
+suits: An adult beginner who wants the longest bow here at the lowest price, and who would rather have a published replacement limb price than a bag of accessories.
+tradeoff: The SAS Spirit 66" Take Down Recurve Bow is the longest bow on this page and the only one whose maker publishes what replacement limbs cost, but its listing describes no rest, no bushings and no string in the box.
