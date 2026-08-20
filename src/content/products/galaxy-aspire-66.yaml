@@ -1,0 +1,62 @@
+# Specifications as published by Lancaster Archery Supply, 19 August 2026.
+# Nothing here was measured on our own bench.
+#
+# This is the only bow on the takedown recurve page whose seller publishes a
+# mass weight. That is worth noting rather than burying: the page says of the
+# others that no listing states how heavy the bow is.
+#
+# The "ready for sight, clicker, plunger, and stabilizers" line is quoted as
+# published. Three of those four fittings are banned in barebow. The page
+# explains which, so a beginner does not buy fittings the division refuses.
+name: Galaxy Aspire 66" Take-Down Recurve Bow
+maker: Galaxy Archery
+category: bow
+price:
+  value: 129.99
+  currency: USD
+  source: retailer
+  retailer: Lancaster Archery Supply
+  checked_on: 2026-08-19
+specs:
+  - label: Length
+    value: 66 in
+    source: maker
+  - label: Draw weight
+    value: 15, 20, 25, 29 or 35 lb
+    source: maker
+  - label: Takedown
+    value: "Yes"
+    source: maker
+  - label: Plunger threaded
+    value: "Yes, listed as coming ready for a plunger"
+    source: maker
+  - label: Mass weight
+    value: 2.25 lb with limbs
+    source: maker
+  - label: Limb fitting
+    value: "Non-ILF, stated by the seller for both the bow and the limbs"
+    source: maker
+  - label: Replacement limbs
+    value: $59.99 the pair. Short limbs make a 66 in bow, long limbs make a 70 in bow
+    source: maker
+  - label: Riser
+    value: Cast magnesium
+    source: maker
+  - label: Limbs
+    value: Black fibreglass with a hard maple core
+    source: maker
+  - label: Arrow rest
+    value: Not stated. The listing does not describe a rest
+    source: maker
+  - label: Brace height
+    value: Not stated
+    source: maker
+  - label: In the box
+    value: Riser, two limbs, dacron string
+    source: maker
+affiliate:
+  merchant: Lancaster Archery Supply
+  placeholder: "[AFFILIATE: Galaxy Aspire 66 Take-Down Recurve Bow]"
+limitation: The limbs stop at 35 lb, the lowest ceiling of any bow on this page, and they are not ILF, so replacement limbs come from one maker at $59.99. The listing describes no arrow rest and publishes no brace height, and the replacement limbs were backordered at two to three weeks when checked.
+suits: A beginner who wants the lightest limbs sold on this page, a metal riser, and a published plunger provision, and who does not expect to shoot above 35 lb.
+tradeoff: The Galaxy Aspire 66" Take-Down Recurve Bow is the only bow on this page whose seller publishes a mass weight and the only one starting at 15 lb, but its limbs stop at 35 lb where the Galaxy Sage 62" reaches 55 lb.

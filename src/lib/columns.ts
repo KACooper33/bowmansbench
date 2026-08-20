@@ -23,8 +23,27 @@ export const SPEC_COLUMNS: Record<string, readonly string[]> = {
    * can be fitted as a child grows, on the same riser. Plunger threaded
    * decides whether the bow can take the one piece of barebow tuning gear
    * that is legal. No retail listing frames either as a buying decision.
+   *
+   * "Mass weight" is here for the opposite reason: almost nobody publishes it.
+   * Of the eleven bows on this site, one maker states it and one figure was
+   * weighed here. The column is mostly em dashes on purpose. A row of gaps is
+   * the finding, and it is the same column the riser table leads with, so a
+   * reader moving between the two tables compares like with like.
+   *
+   * It sits after "Draw weight" rather than second, as it does for risers,
+   * because a bow buyer decides on draw weight first and a riser has none.
+   *
+   * "Takedown" and "Limb fitting" are two questions, and they were being
+   * answered in one cell. Takedown asks whether the bow comes apart. Limb
+   * fitting asks whose limbs go back on, which is the question the beginner
+   * takedown page is built around and the one that decides what an upgrade
+   * costs. Every row answers Takedown with Yes or No and nothing else.
+   *
+   * A listing that never mentions a fitting reads "Not stated", not "Not
+   * ILF". An omission is not a denial, and the difference is the whole
+   * distance between reporting and guessing.
    */
-  bow: ['Length', 'Draw weight', 'Takedown', 'Plunger threaded'],
+  bow: ['Length', 'Draw weight', 'Mass weight', 'Takedown', 'Limb fitting', 'Plunger threaded'],
 };
 
 /** Used when a category has no column list yet. */
